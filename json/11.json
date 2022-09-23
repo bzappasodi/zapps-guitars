@@ -1,5 +1,5 @@
 {
-  "name": "Metapod",
+  "name": "Gibson",
   "type": [
     "Bug"
   ],
@@ -29,5 +29,5 @@
       "value": 30
     }
   ],
-  "image": "images/metapod.jpg"
+  "image": "images/gibson.jpg"
 }

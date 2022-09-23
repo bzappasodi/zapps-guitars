@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "name": "Black Les Paul Custom",
+    "image": "images/blacklespaul.jpg",
+    "year": "1973",
+    "specs": ["Purchased in January 1974 for $425",
+      "Date the instrument by the potentiometers, 3 of which are original and are wired modern.",
+      "Potentiometer number is: 1377336. This potentiometer was made by CTS Corporation (Chicago Telephone Supply) in the 36th week (September 3, 1973 to September 9, 1973) of 1973.",
+      "The neck was broken twice and in the repair process the serial number was removed.",
+      "It was a Second",
+      "The pickups are Seymour Duncan Antiquity JB / Jazz. They are factory not potted.",
+      "It has been re-fretted numerous times.",
+      "Gold Grover machines, and black speed knobs added 2016"]
+  },
+  {
+    "id": 2,
+    "name": "Les Paul Standard",
+    "image": "images/sburstlespaul.jpg",
+    "year": "1968",
+    "specs": ["Springs","big block"]
+  },
+  {
+    "id": 3,
+    "name": "Fender Stratocaster Plus",
+    "image": "images/stratplus.jpg",
+    "year": "1989",
+    "specs": ["500k","red finish"]
+  },
+  {
+    "id": 4,
+    "name": "Charvel San Dimas stock",
+    "image": "images/greenstocksandimas.jpg",
+    "year": "2010",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 5,
+    "name": "Charvel San Dimas #2",
+    "image": "images/modgreensandimas.jpg",
+    "year": "2010",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 6,
+    "name": "Jackson Soloist custom",
+    "image": "images/jackson.jpg",
+    "year": "1987",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 7,
+    "name": "Gibson ES 347",
+    "image": "images/es347.jpg",
+    "year": "1982",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 8,
+    "name": "Gibson ES 175",
+    "image": "images/es175.jpg",
+    "year": "1976",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 9,
+    "name": "Charvel San Dimas Trans Kandy Gold",
+    "image": "images/transkandygold.jpg",
+    "year": "2009",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 10,
+    "name": "Charvel So Cal",
+    "image": "images/redsocal.jpg",
+    "year": "2010",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 11,
+    "name": "Carona Caster Warmoth",
+    "image": "images/caronacaster.jpg",
+    "year": "2020",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 12,
+    "name": "Warmoth shredder",
+    "image": "images/warmothshredder.jpg",
+    "year": "2020",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 13,
+    "name": "Warmoth so cal",
+    "image": "images/warmothsocal.jpg",
+    "year": "2000",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 14,
+    "name": "Warmoth Dakota red",
+    "image": "images/dakotared.jpg",
+    "year": "2021",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 15,
+    "name": "Martin D-35",
+    "image": "images/martin.jpg",
+    "year": "1967",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 16,
+    "name": "Warmoth Jeff Beck",
+    "image": "images/greenwarmoth.jpg",
+    "year": "2021",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 17,
+    "name": "Gianni Classical",
+    "image": "images/giannini.jpg",
+    "year": "1972",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 18,
+    "name": "Polar White San Dimas",
+    "image": "images/polarwhite.jpg",
+    "year": "2010",
+    "specs": ["paper","ernie ball"]
+  },
+  {
+    "id": 19,
+    "name": "Kentucky Mandolin",
+    "image": "images/mandolin.jpg",
+    "year": "1987",
+    "specs": ["floyd","duncan"]
+  },
+  {
+    "id": 20,
+    "name": "Casio Midi",
+    "image": "images/casio.jpg",
+    "year": "1987",
+    "specs": ["nut","strings"]
+  },
+  {
+    "id": 21,
+    "name": "Charvel San Dimas MIJ",
+    "image": "images/87sandimas.jpg",
+    "year": "1987",
+    "specs": ["nut","strings"]
+  }
+]

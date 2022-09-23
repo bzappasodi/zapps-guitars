@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Black LesPaul Custom",
+    "image": "images/bulbasaur.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sunbusrt LesPaul",
+    "image": "images/ivysaur.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Fender Straocaster Plus",
+    "image": "images/venusaur.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Charvel San Dimas stock",
+    "image": "images/charmander.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Charvel San Dimas mod",
+    "image": "images/charmeleon.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Jackson Soloist custom",
+    "image": "images/charizard.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Gibson ES 347",
+    "image": "images/squirtle.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Gibson ES 175",
+    "image": "images/wartortle.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Charvel San Dimas Trans Kandy Gold",
+    "image": "images/blastoise.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Charvel So Cal",
+    "image": "images/caterpie.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Carona Caster Warmoth",
+    "image": "images/metapod.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Warmoth shredder",
+    "image": "images/butterfree.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Warmoth so cal",
+    "image": "images/weedle.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Warmoth Dakota red",
+    "image": "images/kakuna.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Martin D-35",
+    "image": "images/beedrill.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Warmoth Jeff Beck",
+    "image": "images/pidgey.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Gianni Classical",
+    "image": "images/pidgeotto.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Polar White San Dimas",
+    "image": "images/pidgeot.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Rattata",
+    "image": "images/rattata.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Casio Midi",
+    "image": "images/raticate.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Charvel San Dimas MIJ",
+    "image": "images/raticate.jpg"
+  }
+]

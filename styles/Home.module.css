@@ -8,4 +8,12 @@
   max-height: 200px;
 }
 
+.gtr-title {
+  text-align: center;
+}
 
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
