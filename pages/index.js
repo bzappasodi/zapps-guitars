@@ -3,30 +3,29 @@ import React, {useState, useEffect} from "react";
 import Link from "next/link";
 import Header from "../pages/header/Header";
 import styles from "../styles/Home.module.css";
+import {useDispatch} from 'react-redux';
+import * as guitarInventorySaga from "./store/sagas/guitarInventory/guitarInventorySaga";
 import Footer from "../pages/footer/Footer";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-// TODO create saga with react query
-// one json file with guitar details
-// query state for details
+import {Container, Col, Row} from 'react-bootstrap';
 
 export default function Home() {
     const [guitars, setGuitars] = useState([]);
+    const dispatch = useDispatch();
     useEffect(() => {
-        async function getGuitars() {
-            const resp = await fetch(
-                "https://zappsguitars.s3.amazonaws.com/guitars.json"
-            );
-
-            setGuitars(await resp.json());
-        }
-        getGuitars();
+        dispatch(guitarInventorySaga.performGuitarInventoryDisplay())
+        // async function getGuitars() {
+        //     const resp = await fetch(
+        //         "https://zappsguitars.s3.amazonaws.com/guitars.json"
+        //     );
+        //
+        //     setGuitars(await resp.json());
+        // }
+        // getGuitars();
 
     }, []);
     return (
         <div>
+
             <img className="jumbotron" src="/my-equipment.jpg" alt="image" width="100%"/>
             <Container className="p-0">
                 <Header/>
