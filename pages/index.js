@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import Link from "next/link";
 import Header from "../pages/header/Header";
 import styles from "../styles/Home.module.css";
@@ -7,21 +7,16 @@ import {useDispatch} from 'react-redux';
 import * as guitarInventorySaga from "./store/sagas/guitarInventory/guitarInventorySaga";
 import Footer from "../pages/footer/Footer";
 import {Container, Col, Row} from 'react-bootstrap';
+import guitarHooks from "./hooks/guitarHooks";
 
 export default function Home() {
-    const [guitars, setGuitars] = useState([]);
+    const {
+        guitars
+    } = guitarHooks();
+
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(guitarInventorySaga.performGuitarInventoryDisplay())
-        // async function getGuitars() {
-        //     const resp = await fetch(
-        //         "https://zappsguitars.s3.amazonaws.com/guitars.json"
-        //     );
-        //
-        //     setGuitars(await resp.json());
-        // }
-        // getGuitars();
-
+        dispatch(guitarInventorySaga.performGuitarInventoryDisplay());
     }, []);
     return (
         <div>
@@ -35,7 +30,7 @@ export default function Home() {
                         <div className={styles.container}>
 
                             <div className={styles.grid}>
-                                {guitars.map((guitars) => (
+                                {guitars ? guitars.map((guitars) => (
                                     <div className={styles.card} key={guitars.id}>
                                         <Link href={`/guitars/${guitars.id}`}>
                                             <a>
@@ -47,7 +42,7 @@ export default function Home() {
                                             </a>
                                         </Link>
                                     </div>
-                                ))}
+                                )): null}
                             </div>
                         </div>
                         <Footer/>
