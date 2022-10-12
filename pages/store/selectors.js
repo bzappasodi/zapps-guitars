@@ -5,8 +5,14 @@ export const getGuitarInventoryState = () => createSelector(
     (guitars) => guitars
 )
 
+// TODO whats up here
+export const getIsApiLoading = () => createSelector(
+    (state) => state.guitarsReducer.guitars,
+    (isApiLoading) => isApiLoading
+)
+
 
 export const getGuitarSpecsById = () => createSelector(
-    (state) => state.guitarsReducer.guitars.id,
+    (state) => state.guitarsReducer.guitars,
     (id) => id,
 )

@@ -15,6 +15,12 @@ export function* watchGuitarInventoryDisplay() {
     yield takeEvery(constants.types.GUITAR_INVENTORY_DISPLAY, executeGuitarInventoryDisplay)
 }
 
+export function isApiLoading(isLoading){
+    return {
+        type: constants.types.API_IS_LOADING,
+        isLoading:isLoading,
+    }
+}
 
 
 export function populateGuitarInventoryResultsToState(guitars) {
@@ -25,7 +31,8 @@ export function populateGuitarInventoryResultsToState(guitars) {
 }
 
 export function* executeGuitarInventoryDisplay() {
-    let guitars = yield call(api.getGuitars)
+
+    let guitars = yield call(api.getGuitars);
     yield put(populateGuitarInventoryResultsToState(guitars))
 }
 

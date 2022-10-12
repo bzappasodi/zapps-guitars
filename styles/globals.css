@@ -1,64 +1,70 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #eeeeee;
+    background-color: #eeeeee;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0c0cf5;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .container {
-  width: 60%;
-  margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .jumbotron, .container .jumbotron {
-  border-radius: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-@media screen and (min-width: 768px)
-{
-  .container-fluid .jumbotron, .container .jumbotron {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
+@media screen and (min-width: 768px) {
+    .container-fluid .jumbotron, .container .jumbotron {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
-@media screen and (min-width: 768px)
-{
-  .jumbotron {
-    padding-bottom: 48px;
-    padding-top: 48px;
-  }
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        padding-bottom: 48px;
+        padding-top: 48px;
+    }
 }
 
 .jumbotron {
-  background-color: #eee;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+    background-color: #eee;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+    html {
+        color-scheme: dark;
+    }
+
+    body {
+        color: white;
+        background: black;
+    }
 }
 

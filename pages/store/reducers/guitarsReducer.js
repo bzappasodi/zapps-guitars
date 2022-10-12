@@ -9,6 +9,11 @@ const guitarsReducer = (state = guitarState, action) => {
                 ...state,
                 guitars: action.guitars,
             };
+        case actionTypes.GUITAR_INVENTORY_ACTION_TYPE.IS_API_DONE_LOADING:
+            return{
+                ...state,
+                isLoading: action.isLoading,
+            };
         default:
             return state;
     }

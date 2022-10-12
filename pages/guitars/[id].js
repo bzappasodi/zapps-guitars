@@ -5,19 +5,29 @@ import styles from "../../styles/Details.module.css";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import Container from 'react-bootstrap/Container';
-import useRouter from 'next/router';
-import guitarHooks from "../hooks/guitarHooks";
+import {useRouter} from 'next/router'
+
+import GuitarHooks from "../hooks/GuitarHooks";
+import Image from "next/image";
+
+function Avatar() {
+    return <Image src="/modgreensandimas.jpg" alt="me" width="64" height="64"/>
+}
 
 export default function Details() {
+
+    const router = useRouter()
+
+
     const {
         query: {id}
-    } = useRouter;
+    } = router;
 
     const {
 
         getGuitarDetails,
 
-    } = guitarHooks();
+    } = GuitarHooks();
 
     const specsOfGuitarSelected = getGuitarDetails({id});
 
@@ -28,33 +38,30 @@ export default function Details() {
 
                 <div>
                     <Link href="/">
-                        <a>Back to Home</a>
+                        <a className="back-to-home">Back to Home</a>
                     </Link>
 
                 </div>
                 <div className={styles.layout}>
                     <div>
-                        <img
-                            className={styles.picture}
-                            src={`https://zappsguitars.s3.amazonaws.com/${specsOfGuitarSelected.image}`}
-                            alt={specsOfGuitarSelected.name}
-                        />
+                        <Image className={styles.picture} src={`/${specsOfGuitarSelected.image}`}
+                               alt={specsOfGuitarSelected.name} width="64" height="64"/>
+
                     </div>
                     <div>
                         <div className={styles.name}>{specsOfGuitarSelected.name}</div>
                         <table>
                             <tbody>
-                            {specsOfGuitarSelected.specs.map((spec) => (
-                                <tr key={spec}>
-                                    <td>
-                                        {spec}
-                                    </td>
-                                </tr>
-                                // <div key={spec}>
-                                //     {spec}
-                                // </div>
-
-                            ))}
+                            <details>
+                                <summary className="gtr-details" style={{cursor:"pointer"}}>Details</summary>
+                                {specsOfGuitarSelected.specs.map((spec) => (
+                                    <tr key={spec}>
+                                        <td>
+                                            {spec}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </details>
                             </tbody>
                         </table>
                     </div>

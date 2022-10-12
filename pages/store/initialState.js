@@ -6,7 +6,8 @@ const initialState = {
         image: '',
         year: '',
         specs: []
-    }
+    },
+    isLoading: true,
 
 }
 
