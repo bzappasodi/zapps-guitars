@@ -1,14 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React, {useState, useEffect} from "react";
 import Link from "next/link";
-import styles from "../../styles/Details.module.css";
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
+import styles from "../../styles/Details.module.scss";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 import Container from 'react-bootstrap/Container';
 import {useRouter} from 'next/router'
 
-import GuitarHooks from "../hooks/GuitarHooks";
+import GuitarHooks from "../../components/hooks/GuitarHooks";
 import Image from "next/image";
+import Button from "@mui/material/Button";
 
 function Avatar() {
     return <Image src="/modgreensandimas.jpg" alt="me" width="64" height="64"/>
@@ -17,16 +18,15 @@ function Avatar() {
 export default function Details() {
 
     const router = useRouter()
+    // const {
+    //     query: {id}
+    // } = router;
+    const {id} = router.query;
 
+    if (!id) return null;
 
     const {
-        query: {id}
-    } = router;
-
-    const {
-
         getGuitarDetails,
-
     } = GuitarHooks();
 
     const specsOfGuitarSelected = getGuitarDetails({id});
@@ -36,16 +36,11 @@ export default function Details() {
             <Container className="p-0">
                 <Header/>
 
-                <div>
-                    <Link href="/">
-                        <a className="back-to-home">Back to Home</a>
-                    </Link>
 
-                </div>
                 <div className={styles.layout}>
                     <div>
                         <Image className={styles.picture} src={`/${specsOfGuitarSelected.image}`}
-                               alt={specsOfGuitarSelected.name} width="64" height="64"/>
+                               layout="fixed" alt={specsOfGuitarSelected.name} width="64" height="64"/>
 
                     </div>
                     <div>
@@ -53,7 +48,9 @@ export default function Details() {
                         <table>
                             <tbody>
                             <details>
-                                <summary className="gtr-details" style={{cursor:"pointer"}}>Details</summary>
+                                <summary className="gtr-details"
+                                         style={{cursor: "pointer", textDecoration: "underline"}}>Details
+                                </summary>
                                 {specsOfGuitarSelected.specs.map((spec) => (
                                     <tr key={spec}>
                                         <td>
@@ -62,8 +59,15 @@ export default function Details() {
                                     </tr>
                                 ))}
                             </details>
+                            <div>
+
+
+                            </div>
                             </tbody>
                         </table>
+                        <Link href="/">
+                            <Button variant="contained" color="primary">Main Page</Button>
+                        </Link>
                     </div>
                 </div>
                 <Footer/>

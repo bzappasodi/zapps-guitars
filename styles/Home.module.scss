@@ -17,3 +17,15 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.card {
+  border: 0;
+  box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%);
+}
+
+
+.heroImage {
+  height: 250px;
+  margin: 0 -8px;
+  position: relative;
+}

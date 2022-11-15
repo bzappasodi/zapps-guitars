@@ -1,6 +1,6 @@
 import {useSelector} from 'react-redux';
 import {useMemo, useState} from 'react';
-import {getGuitarInventoryState, getGuitarSpecsById, getIsApiLoading} from '../store/selectors';
+import {getGuitarInventoryState, getGuitarSpecsById, getIsApiLoading} from '../../selectors';
 
 function GuitarHooks() {
     const getGuitars = useMemo(getGuitarInventoryState, [])

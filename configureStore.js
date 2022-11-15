@@ -1,9 +1,10 @@
-import {createStore, applyMiddleware, combineReducers} from 'redux';
+import {applyMiddleware, combineReducers} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import {createLogger} from 'redux-logger';
 import {createWrapper} from 'next-redux-wrapper';
-import guitarsReducer from './reducers/guitarsReducer';
-import rootSaga from './sagas/rootSaga';
+import { legacy_createStore as createStore} from 'redux'
+import guitarsReducer from './store/reducers/guitarsReducer';
+import rootSaga from './store/sagas/rootSaga';
 import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({

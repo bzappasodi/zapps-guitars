@@ -7,7 +7,7 @@ function Footer() {
 
     return (
         <div>
-            <p>&copy; {year} Zapp&apos;s Guitar Imposium</p>
+            <p>&copy; {year} Zapp&apos;s Guitar inventory</p>
         </div>
     );
 }
