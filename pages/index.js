@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.scss";
 import {useDispatch} from 'react-redux';
 import * as guitarInventorySaga from "../store/sagas/guitarInventory/guitarInventorySaga";
 import Footer from "../components/footer/Footer";
-import {Container} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import profilePic from '../public/my-equipment.jpg';
 
 import {
@@ -16,7 +16,12 @@ import {
     MDBCardImage,
     MDBBtn
 } from 'mdb-react-ui-kit';
+
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import GuitarHooks from "../components/hooks/GuitarHooks";
+import Button from "@mui/material/Button";
 
 function Home() {
     const {
@@ -34,37 +39,24 @@ function Home() {
 
     const displayGuitars = (guitars) => {
         return (
-            <MDBCard key={guitars.id} className={styles.card}>
+            <MDBCard key={guitars.id}>
                 <MDBCardImage src={`https://zappsguitars.s3.amazonaws.com/${guitars.image}`} position='top'
                               alt={guitars.name}/>
                 <MDBCardBody>
                     <MDBCardTitle>{guitars.year} {guitars.name}</MDBCardTitle>
                     <MDBCardText>
                     </MDBCardText>
+
                     <Link href={`/guitars/${guitars.id}`}>
-                        Details Page
+                        <Button variant="contained" color="primary" className={styles.detailsbtn}>Details Page</Button>
                     </Link>
                 </MDBCardBody>
             </MDBCard>);
     };
     return (
-        <>
-            <picture>
-                <source style={{minWidth: "650px"}} srcSet="/my-equipment.jpg"/>
-                <source style={{minWidth: "465px"}} srcSet="/my-equipment.jpg"/>
-                <img src={profilePic} alt="Zapp's Guitars" style={{width: "100%"}}/>
-            </picture>
-
-            <Container className="p-0">
-
-                <Header/>
-                <div className={styles.grid}>
-                    {guitars ? guitars.map(guitars => displayGuitars(guitars)) : null};
-                </div>
-                <Footer/>
-            </Container>
-        </>
-
+        <div className={styles.grid}>
+            {guitars ? guitars.map(guitars => displayGuitars(guitars)) : null};
+        </div>
     );
 }
 

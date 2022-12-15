@@ -11,6 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-free": "^6.2.1",
     "@mui/material": "^5.10.12",
     "@next/font": "^13.0.2",
     "@reduxjs/toolkit": "^1.9.0",
