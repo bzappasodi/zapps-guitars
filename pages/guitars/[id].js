@@ -16,9 +16,7 @@ function Avatar() {
 export default function Details() {
 
     const router = useRouter()
-    // const {
-    //     query: {id}
-    // } = router;
+
     const {id} = router.query;
 
     if (!id) return null;
@@ -31,42 +29,33 @@ export default function Details() {
 
     return (
         <>
+            <div className={styles.layout}>
+                <div>
+                    <Image className={styles.picture} src={`/${specsOfGuitarSelected.image}`}
+                           layout="fixed" alt={specsOfGuitarSelected.name} width="64" height="64"/>
 
-
-
-                <div className={styles.layout}>
-                    <div>
-                        <Image className={styles.picture} src={`/${specsOfGuitarSelected.image}`}
-                               layout="fixed" alt={specsOfGuitarSelected.name} width="64" height="64"/>
-
-                    </div>
-                    <div>
-                        <div className={styles.name}>{specsOfGuitarSelected.name}</div>
-                        <table>
-                            <tbody>
-                            <details>
-                                <summary className="gtr-details"
-                                         style={{cursor: "pointer", textDecoration: "underline"}}>Details
-                                </summary>
-                                {specsOfGuitarSelected.specs.map((spec) => (
-                                    <tr key={spec}>
-                                        <td>
-                                            {spec}
-                                        </td>
-                                    </tr>
-                                ))}
-                            </details>
-                            <div>
-
-
-                            </div>
-                            </tbody>
-                        </table>
-                        <Link href="/">
-                            <Button variant="contained" color="primary">Main Page</Button>
-                        </Link>
-                    </div>
                 </div>
+                <div>
+                    <div className={styles.name}>{specsOfGuitarSelected.year} {specsOfGuitarSelected.name}</div>
+                    <table>
+                        <thead>
+                        </thead>
+                        <tbody>
+                        {specsOfGuitarSelected.specs.map((spec) => (
+                            <tr key={spec}>
+                                <td>
+                                    {spec}
+                                </td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </table>
+
+                    <Link className="mt-4" href="/">
+                        <Button variant="contained" color="primary">Back to Main Page</Button>
+                    </Link>
+                </div>
+            </div>
 
         </>
     );

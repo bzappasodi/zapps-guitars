@@ -6,7 +6,7 @@ function Footer() {
     let year = newDate.getFullYear();
 
     return (
-        <div>
+        <div className="gtr-title">
             <p>&copy; {year} Zapp&apos;s Guitar inventory</p>
         </div>
     );

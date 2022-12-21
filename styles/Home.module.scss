@@ -16,7 +16,7 @@
 }
 
 
-.detailsbtn{
+.detailsbtn {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -26,4 +26,9 @@
   height: 250px;
   margin: 0 -8px;
   position: relative;
+}
+
+.bottomContainer {
+  position: absolute;
+  bottom: 5%;
 }

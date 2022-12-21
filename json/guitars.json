@@ -4,153 +4,309 @@
     "name": "Black Les Paul Custom",
     "image": "blacklespaul.jpg",
     "year": "1973",
-    "specs": ["Purchased in January 1974",
+    "specs": [
+      "Purchased in January 1974",
       "Date the instrument by the potentiometers, 3 of which are original and are wired modern.",
       "Potentiometer number is: 1377336. This potentiometer was made by CTS Corporation (Chicago Telephone Supply) in the 36th week (September 3, 1973 to September 9, 1973) of 1973.",
       "The neck was broken twice and in the repair process the serial number was removed.",
       "It was a Second",
       "The pickups are Seymour Duncan Antiquity JB / Jazz. They are factory not potted.",
       "It has been re-fretted numerous times.",
-      "Gold Grover machines, and black speed knobs added 2016"]
+      "Gold Grover machines, and black speed knobs added 2016"
+    ]
   },
   {
     "id": 2,
     "name": "Les Paul Standard",
     "image": "sburstlespaul.jpg",
     "year": "1968",
-    "specs": ["Springs","big block"]
+    "specs": [
+      "The 1968 Les Paul Standards were gold tops only, and featured soapbar P90 pickups.",
+      "I bought it as a gold top, the previous owner put humbucking pickups in it. (and didnt do a good job of it!)",
+      "I had it re-finished in sunburst 1976 by Eric Schulte.",
+      "The pickups are Seymour Duncan Antiquity JB / Jazz.",
+      "Potentiometers are wired classic 50s style",
+      "The neck was broken once and repaired by John Zeidler."
+    ]
   },
   {
     "id": 3,
     "name": "Fender Stratocaster Plus",
     "image": "stratplus.jpg",
     "year": "1989",
-    "specs": ["500k","red finish"]
+    "specs": [
+      "Lace sensor pickups stock",
+      "Tone pot was replaced by previous owner otherwise completely stock",
+      "TBX pot added in"
+    ]
   },
   {
     "id": 4,
     "name": "Charvel San Dimas stock",
     "image": "greenstocksandimas.jpg",
     "year": "2010",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Sea sick Green",
+      "Series: U.S.A Production Model",
+      "Body: 3-Piece Alder",
+      "Neck: Bolt-On 1-Piece Quartersawn Eastern Hardrock Maple with Natural Oiled Finish",
+      "Fingerboard: Maple with 12 inch to 16 inch Compound Radius",
+      "No. of Frets: 22 Jumbo Dunlop® 6100",
+      "Machine Heads: Grover® Mini Rotomatic Die-Cast Tuners",
+      "Gotoh Floyd Rose locking trem bridge with push in arm and FU-tone high tension noiseless springs (red)",
+      "Bridge Pickup: Seymour Duncan® JB TB4 Humbucking Pickup",
+      "Neck Pickup: Seymour Duncan® 59 SH1N Humbucking Pickup",
+      "Pickup Switching: 3-Position Toggle:",
+      "Unique Features: One piece Quartersawn Hard Rock Maple Neck",
+      "Seymour Duncan 500k potentiometer",
+      "Floyd Rose® #R3 Locking Nut"
+    ]
   },
   {
     "id": 5,
     "name": "Charvel San Dimas #2",
     "image": "modgreensandimas.jpg",
     "year": "2010",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Sea sick Green",
+      "Series: U.S.A Production Model",
+      "Body: 3-Piece Alder",
+      "Neck: Bolt-On 1-Piece Quartersawn Eastern Hardrock Maple with Natural Oiled Finish",
+      "Fingerboard: Maple with 12 inch to 16 inch Compound Radius",
+      "No. of Frets: 22 Jumbo Dunlop® 6100",
+      "Machine Heads: Grover® Mini Rotomatic Die-Cast Tuners",
+      "Gotoh Floyd Rose locking trem bridge with push in arm and FU-tone high tension noiseless springs (red) tungsten sustain block and pop in arm",
+      "Bridge Pickup: Dimarzio DP 155 Tone Zone",
+      "Neck Pickup: Dimarzio DP193 Air Norton",
+      "Pickup Switching: 3-Position Toggle:",
+      "Unique Features: One piece Quartersawn Hard Rock Maple Neck",
+      "Seymour Duncan 500k potentiometer",
+      "Floyd Rose® #R3 Locking Nut"
+    ]
   },
   {
     "id": 6,
     "name": "Jackson Soloist custom",
     "image": "jackson.jpg",
     "year": "1987",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Serial number dates it as, manufactured in the USA San Dimas plant.",
+      "Refretted by John Zielder and Ron Ruggerio.",
+      " Pickups are 2 Seymour Duncan JB hot rails. Bridge is Seymour Duncan JB. 80s factory potted pups.",
+      "500k volume pot"
+    ]
   },
   {
     "id": 7,
     "name": "Gibson ES 347",
     "image": "es347.jpg",
-    "year": "1982",
-    "specs": ["nut","strings"]
+    "year": "1979",
+    "specs": [
+      "It is a Second",
+      "It is a product of the Gibson Kalamazoo plant, Michigan, USA",
+      "The original owner replaced the bridge otherwise its all original"
+    ]
   },
   {
     "id": 8,
     "name": "Gibson ES 175",
     "image": "es175.jpg",
     "year": "1976",
-    "specs": ["nut","strings"]
+    "specs": [
+      "It is a Second",
+      "It is a product of the Gibson Kalamazoo plant, Michigan, USA",
+      "It has been refretted by John Zielder.",
+      "Schaller tuning machines added by previous owner.",
+      "The neck was broken once and repaired by Ron Ruggierio.",
+      " Seymour Duncan Jazz neck, Custom bridge."
+    ]
   },
   {
     "id": 9,
     "name": "Charvel San Dimas Trans Kandy Gold",
     "image": "transkandygold.jpg",
     "year": "2009",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Trans Kandy Gold HSS",
+      "Alder body",
+      "1-Piece maple neck, bolt-on",
+      "Compound radius 12-16 inch",
+      "Bridge pickup: Duncan JB",
+      "Neck/Middle pickups: Duncan STK S4",
+      "Gotoh floyd rose",
+      "Grover mini tuners",
+      "One volume control knob, knurled",
+      "Original 3-position pickup selector toggle was replaced with 'Free-Way 6 way' toggle"
+    ]
   },
   {
     "id": 10,
     "name": "Charvel So Cal",
     "image": "redsocal.jpg",
     "year": "2010",
-    "specs": ["nut","strings"]
+    "specs": [
+      " Ferrari red",
+      "Alder body",
+      "1-piece San Dimas Style 1 maple neck, bolt-on",
+      "Compound radius 12-16 inch",
+      "Bridge pickup: DiMarzio Tone Zone",
+      "Neck pickup: DiMarzio Evolution",
+      "German Floyd Rose with added tungsten sustain block and pop in arm",
+      "FU Tone Red heavy duty noiseless springs"
+    ]
   },
   {
     "id": 11,
-    "name": "Carona Caster Warmoth",
-    "image": "caronacaster.jpg",
+    "name": "Corona Caster Warmoth",
+    "image": "coronacaster.jpg",
     "year": "2020",
-    "specs": ["nut","strings"]
+    "specs": [
+      "2016 Fender American Standard Stratocaster Ash Body Burst",
+      "Wilkinson/Gotoh VS100  Trem",
+      "KGC Wilkinson/Gotoh VS100 Series Brass Tremolo Block",
+      "Warmoth Roasted Flame Maple neck with maple board",
+      "Schaller tuners",
+      "Medium Jumbo 6150 Nickel frets",
+      "LSR",
+      "ObsidianWire SSH for Strat pre-wired kit - 250k / 500k pot",
+      "Seymour Duncan JB",
+      " Fender custom Shop Texas Specials middle and neck"
+    ]
   },
   {
     "id": 12,
     "name": "Warmoth shredder",
     "image": "warmothshredder.jpg",
     "year": "2020",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Warmoth Flame maple Neck, with dark indian rosewood board",
+      "Warmoth One piece chambered Mahogany Strat body with a bookmatched Koa laminate top",
+      "Sperzel locking tuners in satin black",
+      "Gotoh floyd style locking trem w/ large sustain block",
+      "53mm Duncan JB humbucker",
+      "Floyd Rose® #R3 Locking Nut",
+      "500k pot"
+    ]
   },
   {
     "id": 13,
     "name": "Warmoth so cal",
     "image": "warmothsocal.jpg",
     "year": "2000",
-    "specs": ["nut","strings"]
+    "specs": [
+      " USA 2005 Fender Stratocaster alder body in Tangerine",
+      "Warmoth roasted maple neck w/ dark indian rosewood board",
+      "Wilkinson/Gotoh VS100 Trem",
+      "KGC Wilkinson/Gotoh VS100 Series Brass Tremolo Block",
+      "Carbon Fiber pickguard",
+      "500k pot",
+      "Suhr Doug Aldrich humbucker"
+    ]
   },
   {
     "id": 14,
     "name": "Warmoth Dakota red",
     "image": "dakotared.jpg",
     "year": "2021",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Warmoth Ash stratocaster body in dakota red",
+      "Wilkinson/Gotoh VS100  Trem",
+      "KGC Wilkinson/Gotoh VS100 Series Brass Tremolo Block",
+      "Warmoth Flame Maple neck with ebony board 12/16 inch compound radius",
+      "Schaller tuners",
+      "LSR",
+      "Medium Jumbo 6150 Nickel frets",
+      "Emerson Custom Prewired Guitar Input Jack",
+      "Bear Knuckle Mule Humbucking bridge"
+    ]
   },
   {
     "id": 15,
     "name": "Martin D-35",
     "image": "martin.jpg",
     "year": "1967",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Brazilian rosewood"
+    ]
   },
   {
     "id": 16,
     "name": "Warmoth Jeff Beck",
     "image": "greenwarmoth.jpg",
     "year": "2021",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Jeff Beck signature Fender Stratocaster Alder body in Seafoam Green",
+      "Wilkinson/Gotoh VS100  Trem",
+      " KGC Wilkinson/Gotoh VS100 Series Brass Tremolo Block",
+      " Warmoth Flame Maple neck with ebony board 12/16 inch compound radius",
+      "Medium Jumbo 6150 Nickel frets",
+      "Schaller tuners",
+      "LSR",
+      "Halo Guitars custom carbon fiber pickguard",
+      "Emerson Custom Prewired Guitar Input Jack",
+      "Bear Knuckle VHII zebra pickups"
+    ]
   },
   {
     "id": 17,
     "name": "Gianni Classical",
     "image": "giannini.jpg",
     "year": "1972",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Cracked at the binding and re-glued."
+    ]
   },
   {
     "id": 18,
     "name": "Polar White San Dimas",
     "image": "polarwhite.jpg",
     "year": "2010",
-    "specs": ["paper","ernie ball"]
+    "specs": [
+      "Polar White",
+      "Series: U.S.A Production Model",
+      "Body: 3-Piece Alder",
+      "Neck: Bolt-On 1-Piece Quartersawn Eastern Hardrock Maple with Natural Oiled Finish",
+      "Fingerboard: Maple with 12 inch to 16 inch Compound Radius",
+      "No. of Frets: 22 Jumbo Dunlop® 6100",
+      "Machine Heads: Grover® Mini Rotomatic Die-Cast Tuners",
+      "Floyd Rose locking trem bridge with push in arm and FU-tone high tension noiseless springs (red) and tungsten sustain block",
+      "Bridge Pickup: Seymour Duncan® JB TB4 Humbucking Pickup",
+      "Neck Pickup: Seymour Duncan® 59 SH1N Humbucking Pickup",
+      "Pickup Switching: 3-Position Toggle:",
+      "Seymour Duncan 500k potentiometer",
+      "Floyd Rose® #R3 Locking Nut"
+    ]
   },
   {
     "id": 19,
     "name": "Kentucky Mandolin",
     "image": "mandolin.jpg",
     "year": "1987",
-    "specs": ["floyd","duncan"]
+    "specs": [
+      "Shadow Pickup added by John Ziedler"
+    ]
   },
   {
     "id": 20,
     "name": "Casio Midi",
     "image": "casio.jpg",
     "year": "1987",
-    "specs": ["nut","strings"]
+    "specs": [
+      "Re-fretted, new bridge, and whammy bar by John Zeidler."
+    ]
   },
   {
     "id": 21,
     "name": "Charvel San Dimas MIJ",
     "image": "87sandimas.jpg",
     "year": "1987",
-    "specs": ["nut","strings"]
+    "specs": [
+      " Cream Basswood body",
+      "Maple Rosewood Bolt-on 22 neck",
+      "1 J90C pickup",
+      "JT-6 bridge / trem",
+      "Original HSC",
+      "All original"
+    ]
   }
 ]

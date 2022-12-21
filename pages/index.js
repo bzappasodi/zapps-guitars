@@ -1,12 +1,8 @@
 import React, {useEffect} from "react";
 import Link from "next/link";
-import Header from "../components/header/Header";
 import styles from "../styles/Home.module.scss";
 import {useDispatch} from 'react-redux';
 import * as guitarInventorySaga from "../store/sagas/guitarInventory/guitarInventorySaga";
-import Footer from "../components/footer/Footer";
-import Container from 'react-bootstrap/Container';
-import profilePic from '../public/my-equipment.jpg';
 
 import {
     MDBCard,
@@ -43,19 +39,21 @@ function Home() {
                 <MDBCardImage src={`https://zappsguitars.s3.amazonaws.com/${guitars.image}`} position='top'
                               alt={guitars.name}/>
                 <MDBCardBody>
-                    <MDBCardTitle>{guitars.year} {guitars.name}</MDBCardTitle>
-                    <MDBCardText>
+                    <MDBCardText>{guitars.year} {guitars.name}
                     </MDBCardText>
+                    <div className={styles.bottomContainer}>
+                        <Link href={`/guitars/${guitars.id}`}>
+                            <Button variant="contained" color="primary" className={styles.detailsbtn}>Details
+                                Page</Button>
+                        </Link>
+                    </div>
 
-                    <Link href={`/guitars/${guitars.id}`}>
-                        <Button variant="contained" color="primary" className={styles.detailsbtn}>Details Page</Button>
-                    </Link>
                 </MDBCardBody>
             </MDBCard>);
     };
     return (
         <div className={styles.grid}>
-            {guitars ? guitars.map(guitars => displayGuitars(guitars)) : null};
+            {guitars ? guitars.map(guitars => displayGuitars(guitars)) : null}
         </div>
     );
 }
