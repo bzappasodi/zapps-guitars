@@ -4,10 +4,9 @@
   grid-gap: 10px;
 }
 
-.card img {
-  max-height: 200px;
+.card:hover {
+  box-shadow: 0 2px 15px -3px rgb(0 0 0 / 17%), 0 10px 20px -2px rgb(0 0 0 / 14%);
 }
-
 
 .container-fluid .jumbotron, .container .jumbotron {
   border-radius: 6px;
