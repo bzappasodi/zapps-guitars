@@ -7,7 +7,15 @@ const initialState = {
         year: '',
         specs: []
     },
+    amps: {
+        id: '',
+        name: '',
+        image: '',
+        year: '',
+        specs: []
+    },
     isLoading: true,
+    equipmentSelected: 'guitars'
 
 }
 

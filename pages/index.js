@@ -1,30 +1,43 @@
 import React, {useEffect} from "react";
-    import styles from "../styles/Home.module.scss";
+import styles from "../styles/Home.module.scss";
 import {useDispatch} from 'react-redux';
 import * as guitarInventorySaga from "../store/sagas/guitarInventory/guitarInventorySaga";
-import GuitarHooks from "../components/hooks/GuitarHooks";
-import DisplayGuitars from "../components/displayGuitars/DisplayGuitars"
+import * as amplifierInventorySaga from "../store/sagas/amplifierInventory/ampliferInventorySaga";
 
-function Home() {
+import GuitarHooks from "../components/hooks/GuitarHooks";
+import DisplayEquipment from "../components/displayEquipment/DisplayEquipment"
+
+// TODO add search box functionality, make responsive add layout make a new component
+
+export default function Home() {
     const {
-        guitars
+        guitars,
+        amps,
+        radioButtonSelection
     } = GuitarHooks();
 
     const dispatch = useDispatch();
 
     useEffect(() => {
-        const fetchGuitars = () => {
+        const fetchEquipment = () => {
             dispatch(guitarInventorySaga.performGuitarInventoryDisplay());
+            dispatch(amplifierInventorySaga.performAmplifierInventoryDisplay());
         }
-        fetchGuitars();
+        fetchEquipment();
+
     }, [dispatch]);
 
     return (
-        <div className={styles.grid}>
-            {/* eslint-disable-next-line react/jsx-key */}
-            {guitars ? guitars.map(guitars => <DisplayGuitars guitars={guitars} />) : null}
-        </div>
+        <>
+            {radioButtonSelection === 'amps' ?
+                <div className={styles.grid}>
+                    {amps ? amps.map(amps => <DisplayEquipment equipment={amps} key={amps.id}/>) : null}
+                </div>
+                :
+                <div className={styles.grid}>
+                    {guitars ? guitars.map(guitars => <DisplayEquipment equipment={guitars} key={guitars.id}/>) : null}
+                </div>
+            }
+        </>
     );
 }
-
-export default Home;

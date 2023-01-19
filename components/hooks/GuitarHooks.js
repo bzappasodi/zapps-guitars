@@ -1,12 +1,17 @@
 import {useSelector} from 'react-redux';
 import {useMemo, useState} from 'react';
-import {getGuitarInventoryState} from '../../selectors';
+import {getGuitarInventoryState, getAmplifierInventoryState, getToggleEquipmentChecked} from '../../selectors';
 
 function GuitarHooks() {
     const getGuitars = useMemo(getGuitarInventoryState, [])
     const guitars = useSelector(state => getGuitars(state))
 
-    const [loading, setLoading] = useState(false);
+
+    const getAmplifiers = useMemo(getAmplifierInventoryState, [])
+    const amps = useSelector(state => getAmplifiers(state))
+
+    const getRadioButtonSelection = useMemo(getToggleEquipmentChecked, [])
+    const radioButtonSelection = useSelector(state => getRadioButtonSelection(state))
 
     const getGuitarDetails = (id) => {
         let theGuitarRequested = Number(Object.values(id))
@@ -15,8 +20,15 @@ function GuitarHooks() {
         return array[newGuitarRequested];
     }
 
+    const getAmpDetails = (id) => {
+        let theGuitarRequested = Number(Object.values(id))
+        const newGuitarRequested = (theGuitarRequested - 1)
+        let array = Object.values(amps)
+        return array[newGuitarRequested];
+    }
+
     return {
-        guitars, getGuitarDetails, loading, setLoading
+        guitars, getGuitarDetails, radioButtonSelection, getAmpDetails, amps
 
     };
 }

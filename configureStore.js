@@ -4,11 +4,15 @@ import {createLogger} from 'redux-logger';
 import {createWrapper} from 'next-redux-wrapper';
 import { legacy_createStore as createStore} from 'redux'
 import guitarsReducer from './store/reducers/guitarsReducer';
+import ampsReducer from './store/reducers/ampsReducer';
+import toggleEquipmentReducer from "./store/reducers/toggleEquipmentReducer";
 import rootSaga from './store/sagas/rootSaga';
 import thunk from 'redux-thunk';
 
 const rootReducer = combineReducers({
     guitarsReducer,
+    ampsReducer,
+    toggleEquipmentReducer
 })
 
 const logger = createLogger();

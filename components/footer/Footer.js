@@ -7,7 +7,7 @@ function Footer() {
 
     return (
         <div className="gtr-title">
-            <p>&copy; {year} Zapp&apos;s Guitar inventory</p>
+            <p>&copy; {year} Zapp&apos;s Equipment inventory</p>
         </div>
     );
 }

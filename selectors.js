@@ -11,8 +11,17 @@ export const getIsApiLoading = () => createSelector(
     (isApiLoading) => isApiLoading
 )
 
+export const getAmplifierInventoryState = () => createSelector(
+    (state) => state.ampsReducer.amps,
+    (guitars) => guitars
+)
 
 export const getGuitarSpecsById = () => createSelector(
     (state) => state.guitarsReducer.guitars,
     (id) => id,
+)
+
+export const getToggleEquipmentChecked = () => createSelector(
+    (state) => state.toggleEquipmentReducer.equipmentSelected,
+    (equipmentSelected) => equipmentSelected,
 )

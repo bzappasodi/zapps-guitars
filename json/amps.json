@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "name": "Fender Deluxe",
+    "image": "fenderdeluxe.jpg",
+    "year": "1954",
+    "specs": [
+      "Purchased in January 1974",
+      "Date the instrument by the potentiometers, 3 of which are original and are wired modern.",
+      "Potentiometer number is: 1377336. This potentiometer was made by CTS Corporation (Chicago Telephone Supply) in the 36th week (September 3, 1973 to September 9, 1973) of 1973.",
+      "The neck was broken twice and in the repair process the serial number was removed.",
+      "It was a Second",
+      "The pickups are Seymour Duncan Antiquity JB / Jazz. They are factory not potted.",
+      "It has been re-fretted numerous times.",
+      "Gold Grover machines, and black speed knobs added 2016"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Fender Deluxe Reverb",
+    "image": "fenderdeluxereverb.jpg",
+    "year": "1965",
+    "specs": [
+      "The 1968 Les Paul Standards were gold tops only, and featured soapbar P90 pickups.",
+      "I bought it as a gold top, the previous owner put humbucking pickups in it. (and didnt do a good job of it!)",
+      "I had it re-finished in sunburst 1976 by Eric Schulte.",
+      "The pickups are Seymour Duncan Antiquity JB / Jazz.",
+      "Potentiometers are wired classic 50s style",
+      "The neck was broken once and repaired by John Zeidler."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Fender Vibrolux",
+    "image": "vibrolux.jpg",
+    "year": "1965",
+    "specs": [
+      "Lace sensor pickups stock",
+      "Tone pot was replaced by previous owner otherwise completely stock",
+      "TBX pot added in"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Fender Hot Rod Deluxe",
+    "image": "hrd.jpg",
+    "year": "1996",
+    "specs": [
+      "Sea sick Green",
+      "Series: U.S.A Production Model",
+      "Body: 3-Piece Alder",
+      "Neck: Bolt-On 1-Piece Quartersawn Eastern Hardrock Maple with Natural Oiled Finish",
+      "Fingerboard: Maple with 12 inch to 16 inch Compound Radius",
+      "No. of Frets: 22 Jumbo Dunlop® 6100",
+      "Machine Heads: Grover® Mini Rotomatic Die-Cast Tuners",
+      "Gotoh Floyd Rose locking trem bridge with push in arm and FU-tone high tension noiseless springs (red)",
+      "Bridge Pickup: Seymour Duncan® JB TB4 Humbucking Pickup",
+      "Neck Pickup: Seymour Duncan® 59 SH1N Humbucking Pickup",
+      "Pickup Switching: 3-Position Toggle:",
+      "Unique Features: One piece Quartersawn Hard Rock Maple Neck",
+      "Seymour Duncan 500k potentiometer",
+      "Floyd Rose® #R3 Locking Nut"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Fender Twin",
+    "image": "fender twin.jpg",
+    "year": "1981",
+    "specs": [
+      "Sea sick Green",
+      "Series: U.S.A Production Model",
+      "Body: 3-Piece Alder",
+      "Neck: Bolt-On 1-Piece Quartersawn Eastern Hardrock Maple with Natural Oiled Finish",
+      "Fingerboard: Maple with 12 inch to 16 inch Compound Radius",
+      "No. of Frets: 22 Jumbo Dunlop® 6100",
+      "Machine Heads: Grover® Mini Rotomatic Die-Cast Tuners",
+      "Gotoh Floyd Rose locking trem bridge with push in arm and FU-tone high tension noiseless springs (red) tungsten sustain block and pop in arm",
+      "Bridge Pickup: Dimarzio DP 155 Tone Zone",
+      "Neck Pickup: Dimarzio DP193 Air Norton",
+      "Pickup Switching: 3-Position Toggle:",
+      "Unique Features: One piece Quartersawn Hard Rock Maple Neck",
+      "Seymour Duncan 500k potentiometer",
+      "Floyd Rose® #R3 Locking Nut"
+    ]
+  }
+]
