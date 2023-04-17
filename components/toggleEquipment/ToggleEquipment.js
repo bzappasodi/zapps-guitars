@@ -1,42 +1,38 @@
-import React, {useState} from 'react';
-import {Form} from "react-bootstrap";
+import React from "react";
+import Form from "react-bootstrap/Form";
 import styles from "../../styles/Home.module.scss";
-import ToggleEquipmentHooks from "../hooks/ToggleEquipmentHooks";
-import {useDispatch} from "react-redux";
-import * as equipmentInventorySaga from "../../store/sagas/equipmentInventory/equipmentInventorySaga";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
-function ToggleEquipment() {
-    const {
-        radioButtonSelection
-    } = ToggleEquipmentHooks()
-
-    const dispatch = useDispatch();
-
-    return (
-        <Form className={styles.toggleEquipment}>
-            <div key={`inline-checkbox`} className="mb-3">
-                <Form.Check
-                    inline
-                    label="Amps"
-                    name="equipment-view"
-                    value='amps'
-                     checked={radioButtonSelection === "amps"}
-                    onChange={(e) => dispatch(equipmentInventorySaga.setIsCheckedToggleEquipment(e.target.value))}
-                    type={'radio'}
-
-                />
-                <Form.Check
-                    inline
-                    label="Guitars"
-                    type={'radio'}
-                    value='guitars'
-                    checked={radioButtonSelection === "guitars"}
-                    name="equipment-view"
-                    onChange={(e) => dispatch(equipmentInventorySaga.setIsCheckedToggleEquipment(e.target.value))}
-                />
-            </div>
-        </Form>
-    );
+function ToggleEquipment({ radioButtonSelection, toggleEquipmentSelection }) {
+  return (
+    <Form className={styles.toggleEquipment}>
+      <Row>
+        <Col className="pt-1">
+          <Form.Check
+            inline
+            label="Amps"
+            name="equipment-view"
+            value="amps"
+            checked={radioButtonSelection === "amps"}
+            onChange={(e) => toggleEquipmentSelection(e)}
+            type={"radio"}
+          />
+        </Col>
+        <Col className="pt-1">
+          <Form.Check
+            inline
+            label="Guitars"
+            type={"radio"}
+            value="guitars"
+            checked={radioButtonSelection === "guitars"}
+            name="equipment-view"
+            onChange={(e) => toggleEquipmentSelection(e)}
+          />
+        </Col>
+      </Row>
+    </Form>
+  );
 }
 
 export default ToggleEquipment;

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Black Les Paul Custom",
-    "image": "blacklespaul.jpg",
+    "image": "black-les-paul.jpg",
     "year": "1973",
     "specs": [
       "Purchased in January 1974",
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Les Paul Standard",
-    "image": "sburstlespaul.jpg",
+    "image": "sunburst-les-paul.jpg",
     "year": "1968",
     "specs": [
       "The 1968 Les Paul Standards were gold tops only, and featured soapbar P90 pickups.",
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "name": "Fender Stratocaster Plus",
-    "image": "stratplus.jpg",
+    "image": "strat-plus.jpg",
     "year": "1989",
     "specs": [
       "Lace sensor pickups stock",
@@ -43,7 +43,7 @@
   {
     "id": 4,
     "name": "Charvel San Dimas stock",
-    "image": "greenstocksandimas.jpg",
+    "image": "green-san-dimas-stock.jpg",
     "year": "2010",
     "specs": [
       "Sea sick Green",
@@ -65,7 +65,7 @@
   {
     "id": 5,
     "name": "Charvel San Dimas #2",
-    "image": "modgreensandimas.jpg",
+    "image": "green-san-dimas-mod.jpg",
     "year": "2010",
     "specs": [
       "Sea sick Green",
@@ -98,7 +98,7 @@
   },
   {
     "id": 7,
-    "name": "Gibson ES 347",
+    "name": "Gibson ES-347",
     "image": "es347.jpg",
     "year": "1979",
     "specs": [
@@ -109,7 +109,7 @@
   },
   {
     "id": 8,
-    "name": "Gibson ES 175",
+    "name": "Gibson ES-175",
     "image": "es175.jpg",
     "year": "1976",
     "specs": [
@@ -123,8 +123,8 @@
   },
   {
     "id": 9,
-    "name": "Charvel San Dimas Trans Kandy Gold",
-    "image": "transkandygold.jpg",
+    "name": "Charvel San Dimas",
+    "image": "trans-kandy-gold.jpg",
     "year": "2009",
     "specs": [
       "Trans Kandy Gold HSS",
@@ -142,7 +142,7 @@
   {
     "id": 10,
     "name": "Charvel So Cal",
-    "image": "redsocal.jpg",
+    "image": "red-so-cal.jpg",
     "year": "2010",
     "specs": [
       " Ferrari red",
@@ -158,7 +158,7 @@
   {
     "id": 11,
     "name": "Corona Caster Warmoth",
-    "image": "coronacaster.jpg",
+    "image": "corona-caster.jpg",
     "year": "2020",
     "specs": [
       "2016 Fender American Standard Stratocaster Ash Body Burst",
@@ -176,7 +176,7 @@
   {
     "id": 12,
     "name": "Warmoth shredder",
-    "image": "warmothshredder.jpg",
+    "image": "warmoth-brown.jpg",
     "year": "2020",
     "specs": [
       "Warmoth Flame maple Neck, with dark indian rosewood board",
@@ -191,7 +191,7 @@
   {
     "id": 13,
     "name": "Warmoth so cal",
-    "image": "warmothsocal.jpg",
+    "image": "warmoth-so-cal.jpg",
     "year": "2000",
     "specs": [
       " USA 2005 Fender Stratocaster alder body in Tangerine",
@@ -206,7 +206,7 @@
   {
     "id": 14,
     "name": "Warmoth Dakota red",
-    "image": "dakotared.jpg",
+    "image": "dakota-red.jpg",
     "year": "2021",
     "specs": [
       "Warmoth Ash stratocaster body in dakota red",
@@ -232,7 +232,7 @@
   {
     "id": 16,
     "name": "Warmoth Jeff Beck",
-    "image": "greenwarmoth.jpg",
+    "image": "green-beck-warmoth-strat.jpg",
     "year": "2021",
     "specs": [
       "Jeff Beck signature Fender Stratocaster Alder body in Seafoam Green",
@@ -259,7 +259,7 @@
   {
     "id": 18,
     "name": "Polar White San Dimas",
-    "image": "polarwhite.jpg",
+    "image": "polar-white-san-dimas.jpg",
     "year": "2010",
     "specs": [
       "Polar White",
@@ -298,7 +298,7 @@
   {
     "id": 21,
     "name": "Charvel San Dimas MIJ",
-    "image": "87sandimas.jpg",
+    "image": "charvel-model-2.jpg",
     "year": "1987",
     "specs": [
       " Cream Basswood body",
@@ -308,5 +308,17 @@
       "Original HSC",
       "All original"
     ]
-  }
+  },{
+  "id": 22,
+  "name": "Charvel San Dimas Wildcard 3",
+  "image": "charvel-Wildcard-3.jpg",
+  "year": "2010",
+  "specs": [
+    "Body: 3-Piece Alde",
+    "Bolt-On 1-Piece Quartersawn Eastern Hardrock Maple with Natural Oiled Finish\n",
+    "Seymour Duncan Custom 5",
+    "JT-6 bridge / trem",
+    "Floyd Rose locking trem bridge with push in arm and FU-tone high tension noiseless springs (red) and tungsten sustain block"
+  ]
+}
 ]

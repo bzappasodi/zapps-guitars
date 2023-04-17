@@ -1,15 +1,16 @@
-import {useState, useMemo} from 'react';
-import {getToggleEquipmentChecked} from "../../selectors";
-import {useSelector} from "react-redux";
+import { useMemo } from "react";
+import { getToggleEquipmentChecked } from "../../store/selectors/selectors";
+import { useSelector } from "react-redux";
 
 function ToggleEquipmentHooks() {
+  const getRadioButtonSelection = useMemo(getToggleEquipmentChecked, []);
+  const radioButtonSelection = useSelector((state) =>
+    getRadioButtonSelection(state)
+  );
 
-    const getRadioButtonSelection = useMemo(getToggleEquipmentChecked, [])
-    const radioButtonSelection = useSelector(state => getRadioButtonSelection(state))
-
-    return {
-        radioButtonSelection
-    };
+  return {
+    radioButtonSelection,
+  };
 }
 
 export default ToggleEquipmentHooks;
