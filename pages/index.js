@@ -16,7 +16,6 @@ export default function Home() {
   const dispatch = useDispatch();
 
   const toggleEquipmentSelection = (e) => {
-    console.log("EEE " + e.target.value);
     dispatch(
       equipmentInventorySaga.setIsCheckedToggleEquipment(e.target.value)
     );

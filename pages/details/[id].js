@@ -5,14 +5,14 @@ import GuitarHooks from "../../components/hooks/GuitarHooks";
 import DisplayEquipmentDetails from "../../components/displayEquipmentDetails/DisplayEquipmentDetails";
 
 export default function Details() {
+  const { getGuitarDetails, getAmpDetails, radioButtonSelection } =
+    GuitarHooks();
+
   const router = useRouter();
 
   const { id } = router.query;
 
   if (!id) return null;
-
-  const { getGuitarDetails, getAmpDetails, radioButtonSelection } =
-    GuitarHooks();
 
   let specsOfEquipmentSelected = getGuitarDetails({ id });
 

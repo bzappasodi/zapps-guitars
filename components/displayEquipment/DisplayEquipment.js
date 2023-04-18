@@ -17,15 +17,11 @@ const DisplayEquipment = ({ equipment }) => {
           width={272}
           height={595}
         />
-
         <MDBCardBody>
           <MDBCardText>
-            <div>
+            <div className={styles.displayImage}>
               {equipment.year} {equipment.name}
             </div>
-          </MDBCardText>
-          <MDBCardText>
-            <div className={styles.bottomContainer}></div>
           </MDBCardText>
         </MDBCardBody>
       </MDBCard>

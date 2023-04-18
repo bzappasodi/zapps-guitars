@@ -10,18 +10,26 @@ function GuitarHooks() {
   const getGuitars = useMemo(getGuitarInventoryState, []);
   const guitars = useSelector((state) => getGuitars(state));
 
-  const getAmplifiers = useMemo(getAmplifierInventoryState, []);
-  const amps = useSelector((state) => getAmplifiers(state));
+  console.log("guitars " + JSON.stringify(guitars));
 
   const getRadioButtonSelection = useMemo(getToggleEquipmentChecked, []);
+
   const radioButtonSelection = useSelector((state) =>
     getRadioButtonSelection(state)
   );
 
+  const getAmplifiers = useMemo(getAmplifierInventoryState, []);
+  const amps = useSelector((state) => getAmplifiers(state));
+
   const getGuitarDetails = (id) => {
+    console.log("id " + JSON.stringify(id));
+
     let theGuitarRequested = Number(Object.values(id));
+    console.log("theGuitarRequested " + JSON.stringify(theGuitarRequested));
+
     const newGuitarRequested = theGuitarRequested - 1;
     let array = Object.values(guitars);
+
     return array[newGuitarRequested];
   };
 

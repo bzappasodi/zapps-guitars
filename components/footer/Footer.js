@@ -7,7 +7,8 @@ function Footer() {
   return (
     <div className="gtr-title">
       <p role="heading" aria-level="3">
-        &copy; {year} Zapp&apos;s Equipment inventory
+        <sup>&copy;</sup>
+        {year} Zapp&apos;s Equipment inventory
       </p>
     </div>
   );

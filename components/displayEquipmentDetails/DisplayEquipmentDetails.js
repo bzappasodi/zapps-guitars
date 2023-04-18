@@ -16,7 +16,11 @@ const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
             alt={specsOfEquipmentSelected.name}
             width={272}
             height={595}
+            className={styles.detailsImage}
           />
+          <Link className="mt-4" href="/">
+            Inventory list page <>&#8594;</>
+          </Link>
         </div>
         <div>
           <div className={styles.name}>
@@ -34,10 +38,6 @@ const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
               ))}
             </tbody>
           </table>
-
-          <Link className="mt-4" href="/">
-            Back to main page<>&#8594;</>
-          </Link>
         </div>
       </div>
     </>

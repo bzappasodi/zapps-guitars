@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Black Les Paul Custom",
+    "name": "Gibson Les Paul Custom",
     "image": "black-les-paul.jpg",
     "year": "1973",
     "specs": [
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "name": "Les Paul Standard",
+    "name": "Gibson Les Paul Standard",
     "image": "sunburst-les-paul.jpg",
     "year": "1968",
     "specs": [
@@ -35,14 +35,19 @@
     "image": "strat-plus.jpg",
     "year": "1989",
     "specs": [
+      "Fender U.S.A Production Model",
       "Lace sensor pickups stock",
-      "Tone pot was replaced by previous owner otherwise completely stock",
-      "TBX pot added in"
+      "TBX pot",
+      "Alder body white finish",
+      "Maple neck with modern C carve and medium jumbo frets",
+      "Wilkinson Roller nut",
+      "Schaller locking tuners",
+      "Weight: 8lb 2oz"
     ]
   },
   {
     "id": 4,
-    "name": "Charvel San Dimas stock",
+    "name": "Charvel San Dimas",
     "image": "green-san-dimas-stock.jpg",
     "year": "2010",
     "specs": [
@@ -64,7 +69,7 @@
   },
   {
     "id": 5,
-    "name": "Charvel San Dimas #2",
+    "name": "Charvel San Dimas",
     "image": "green-san-dimas-mod.jpg",
     "year": "2010",
     "specs": [
@@ -86,13 +91,14 @@
   },
   {
     "id": 6,
-    "name": "Jackson Soloist custom",
+    "name": "Jackson Soloist Custom",
     "image": "jackson.jpg",
     "year": "1987",
     "specs": [
+      "Series: U.S.A Production Model",
       "Serial number dates it as, manufactured in the USA San Dimas plant.",
-      "Refretted by John Zielder and Ron Ruggerio.",
-      " Pickups are 2 Seymour Duncan JB hot rails. Bridge is Seymour Duncan JB. 80s factory potted pups.",
+      "Re-fretted by John Zielder and Ron Ruggerio.",
+      "Pickups are 2 Seymour Duncan JB hot rails. Bridge is Seymour Duncan JB. 80s factory potted pups.",
       "500k volume pot"
     ]
   },
@@ -115,10 +121,10 @@
     "specs": [
       "It is a Second",
       "It is a product of the Gibson Kalamazoo plant, Michigan, USA",
-      "It has been refretted by John Zielder.",
+      "It has been re-fretted by John Zielder.",
       "Schaller tuning machines added by previous owner.",
       "The neck was broken once and repaired by Ron Ruggierio.",
-      " Seymour Duncan Jazz neck, Custom bridge."
+      "Seymour Duncan Jazz neck, Custom bridge."
     ]
   },
   {
@@ -129,6 +135,7 @@
     "specs": [
       "Trans Kandy Gold HSS",
       "Alder body",
+      "Series: U.S.A Production Model",
       "1-Piece maple neck, bolt-on",
       "Compound radius 12-16 inch",
       "Bridge pickup: Duncan JB",
@@ -141,11 +148,12 @@
   },
   {
     "id": 10,
-    "name": "Charvel So Cal",
+    "name": "Charvel So-Cal",
     "image": "red-so-cal.jpg",
     "year": "2010",
     "specs": [
-      " Ferrari red",
+      "Ferrari red",
+      "Series: U.S.A Production Model",
       "Alder body",
       "1-piece San Dimas Style 1 maple neck, bolt-on",
       "Compound radius 12-16 inch",
@@ -157,7 +165,7 @@
   },
   {
     "id": 11,
-    "name": "Corona Caster Warmoth",
+    "name": "Warmoth PartsCaster",
     "image": "corona-caster.jpg",
     "year": "2020",
     "specs": [
@@ -170,12 +178,12 @@
       "LSR",
       "ObsidianWire SSH for Strat pre-wired kit - 250k / 500k pot",
       "Seymour Duncan JB",
-      " Fender custom Shop Texas Specials middle and neck"
+      "Fender custom Shop Texas Specials middle and neck"
     ]
   },
   {
     "id": 12,
-    "name": "Warmoth shredder",
+    "name": "Warmoth PartsShredder",
     "image": "warmoth-brown.jpg",
     "year": "2020",
     "specs": [
@@ -190,11 +198,11 @@
   },
   {
     "id": 13,
-    "name": "Warmoth so cal",
+    "name": "Warmoth Parts So-Cal",
     "image": "warmoth-so-cal.jpg",
     "year": "2000",
     "specs": [
-      " USA 2005 Fender Stratocaster alder body in Tangerine",
+      "USA 2005 Fender Stratocaster alder body in Tangerine",
       "Warmoth roasted maple neck w/ dark indian rosewood board",
       "Wilkinson/Gotoh VS100 Trem",
       "KGC Wilkinson/Gotoh VS100 Series Brass Tremolo Block",
@@ -205,7 +213,7 @@
   },
   {
     "id": 14,
-    "name": "Warmoth Dakota red",
+    "name": "Warmoth PartsCaster",
     "image": "dakota-red.jpg",
     "year": "2021",
     "specs": [
@@ -226,19 +234,20 @@
     "image": "martin.jpg",
     "year": "1967",
     "specs": [
-      "Brazilian rosewood"
+      "Brazilian rosewood",
+      "Pickup added by previous owner"
     ]
   },
   {
     "id": 16,
-    "name": "Warmoth Jeff Beck",
+    "name": "Warmoth PartsCaster",
     "image": "green-beck-warmoth-strat.jpg",
     "year": "2021",
     "specs": [
       "Jeff Beck signature Fender Stratocaster Alder body in Seafoam Green",
       "Wilkinson/Gotoh VS100  Trem",
-      " KGC Wilkinson/Gotoh VS100 Series Brass Tremolo Block",
-      " Warmoth Flame Maple neck with ebony board 12/16 inch compound radius",
+      "KGC Wilkinson/Gotoh VS100 Series Brass Tremolo Block",
+      "Warmoth Flame Maple neck with ebony board 12/16 inch compound radius",
       "Medium Jumbo 6150 Nickel frets",
       "Schaller tuners",
       "LSR",
@@ -253,12 +262,12 @@
     "image": "giannini.jpg",
     "year": "1972",
     "specs": [
-      "Cracked at the binding and re-glued."
+      "Binding crack at top repaired"
     ]
   },
   {
     "id": 18,
-    "name": "Polar White San Dimas",
+    "name": "Charvel San Dimas",
     "image": "polar-white-san-dimas.jpg",
     "year": "2010",
     "specs": [
@@ -297,11 +306,12 @@
   },
   {
     "id": 21,
-    "name": "Charvel San Dimas MIJ",
+    "name": "Charvel San Dimas model 2",
     "image": "charvel-model-2.jpg",
     "year": "1987",
     "specs": [
-      " Cream Basswood body",
+      "MIJ",
+      "Cream Basswood body",
       "Maple Rosewood Bolt-on 22 neck",
       "1 J90C pickup",
       "JT-6 bridge / trem",
@@ -310,11 +320,14 @@
     ]
   },{
   "id": 22,
-  "name": "Charvel San Dimas Wildcard 3",
+  "name": "Charvel San Dimas",
   "image": "charvel-Wildcard-3.jpg",
   "year": "2010",
   "specs": [
+    "Mat Black",
+    "Series: U.S.A Production Model",
     "Body: 3-Piece Alde",
+    "Wildcard 3 Last Batch",
     "Bolt-On 1-Piece Quartersawn Eastern Hardrock Maple with Natural Oiled Finish\n",
     "Seymour Duncan Custom 5",
     "JT-6 bridge / trem",
