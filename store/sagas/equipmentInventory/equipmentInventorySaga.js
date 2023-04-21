@@ -4,24 +4,11 @@ import * as constants from "../../../constants";
 import * as api from "../../../api/equipmentInventoryService";
 import * as actionTypes from "../../actions/actionTypes";
 
-export function performEquipmentInventoryDisplay() {
-  return {
-    type: constants.types.EQUIPMENT_INVENTORY_DISPLAY,
-  };
-}
-
 export function* watchEquipmentInventoryDisplay() {
   yield takeEvery(
     constants.types.EQUIPMENT_INVENTORY_DISPLAY,
     executeEquipmentInventoryDisplay
   );
-}
-
-export function isApiLoading(isLoading) {
-  return {
-    type: constants.types.API_IS_LOADING,
-    isLoading: isLoading,
-  };
 }
 
 export function populateEquipmentInventoryResultsToState(equipments) {

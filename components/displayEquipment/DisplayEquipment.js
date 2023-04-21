@@ -1,5 +1,6 @@
 import React from "react";
-import { MDBCard, MDBCardBody, MDBCardText } from "mdb-react-ui-kit";
+import { Container, Row, Col, Card } from "react-bootstrap";
+
 import styles from "../../styles/Home.module.scss";
 import Link from "next/link";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
@@ -10,22 +11,23 @@ import Image from "next/image";
 const DisplayEquipment = ({ equipment }) => {
   return (
     <Link href={`/details/${equipment.id}`}>
-      <MDBCard key={equipment.id} className={styles.card}>
+      <Card key={equipment.id} className={styles.card}>
         <Image
           src={`/inventory/${equipment.image}`}
           alt={equipment.name}
           width={272}
           height={595}
         />
-        <MDBCardBody>
-          <MDBCardText>
-            <div className={styles.displayImage}>
+        <Card.Body>
+          <Card.Text>
+            <span className={styles.displayImage}>
               {equipment.year} {equipment.name}
-            </div>
-          </MDBCardText>
-        </MDBCardBody>
-      </MDBCard>
+            </span>
+          </Card.Text>
+        </Card.Body>
+      </Card>
     </Link>
+
   );
 };
 

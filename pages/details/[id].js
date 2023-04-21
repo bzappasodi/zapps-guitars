@@ -1,28 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useRouter } from "next/router";
-import GuitarHooks from "../../components/hooks/GuitarHooks";
+import EquipmentDetailsHooks from "../../components/hooks/EquipmentDetailsHooks";
 import DisplayEquipmentDetails from "../../components/displayEquipmentDetails/DisplayEquipmentDetails";
 
 export default function Details() {
-  const { getGuitarDetails, getAmpDetails, radioButtonSelection } =
-    GuitarHooks();
-
+  const { radioButtonSelection, getEquipmentSelectedSpecs } =
+    EquipmentDetailsHooks();
   const router = useRouter();
 
-  const { id } = router.query;
+  const id = router.query.id;
+
 
   if (!id) return null;
 
-  let specsOfEquipmentSelected = getGuitarDetails({ id });
-
-  if (radioButtonSelection === "amps") {
-    specsOfEquipmentSelected = getAmpDetails({ id });
-  }
+  let equipmentSelectedSpecs = getEquipmentSelectedSpecs(
+    id,
+    radioButtonSelection
+  );
 
   return (
     <DisplayEquipmentDetails
-      specsOfEquipmentSelected={specsOfEquipmentSelected}
+      specsOfEquipmentSelected={equipmentSelectedSpecs}
     />
   );
 }

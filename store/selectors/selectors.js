@@ -6,6 +6,12 @@ export const getGuitarInventoryState = () =>
     (guitars) => guitars
   );
 
+export const makeSelectEquipmentDetails = () =>
+  createSelector(
+    (state, props) => state.guitarsReducer.guitars[props.selectedId],
+    (guitars) => guitars
+  );
+
 // TODO whats up here
 export const getIsApiLoading = () =>
   createSelector(

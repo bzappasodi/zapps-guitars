@@ -3,7 +3,6 @@ import styles from "../styles/Home.module.scss";
 import { useDispatch } from "react-redux";
 import * as guitarInventorySaga from "../store/sagas/guitarInventory/guitarInventorySaga";
 import * as amplifierInventorySaga from "../store/sagas/amplifierInventory/ampliferInventorySaga";
-import { Container, Row, Col, Card } from "react-bootstrap";
 
 import GuitarHooks from "../components/hooks/GuitarHooks";
 import DisplayEquipment from "../components/displayEquipment/DisplayEquipment";
@@ -11,9 +10,17 @@ import ToggleEquipment from "../components/toggleEquipment/ToggleEquipment";
 import * as equipmentInventorySaga from "../store/sagas/equipmentInventory/equipmentInventorySaga";
 
 // TODO add search box functionality, make responsive fix layout component, restrict radio buttons
-
-export default function Home() {
-  const { guitars, amps, radioButtonSelection } = GuitarHooks();
+export async function getServerSideProps(context) {
+  // comes in as serverside props
+  const resp = await fetch("https://zappsguitars.s3.amazonaws.com/guitars.json");
+  return {
+    props: {
+      guitars: await resp.json(),
+    },
+  };
+}
+export default function Home({guitars}) {
+  const {radioButtonSelection, amps,  } = GuitarHooks();
   const dispatch = useDispatch();
 
   const toggleEquipmentSelection = (e) => {
@@ -24,11 +31,10 @@ export default function Home() {
 
   useEffect(() => {
     const fetchEquipment = () => {
-      dispatch(guitarInventorySaga.performGuitarInventoryDisplay());
       dispatch(amplifierInventorySaga.performAmplifierInventoryDisplay());
     };
-    if (!guitars){fetchEquipment();}
-  }, []);
+    fetchEquipment();
+  }, [dispatch]);
 
   return (
     <>
@@ -49,9 +55,7 @@ export default function Home() {
         <div className={styles.grid}>
           {guitars
             ? guitars.map((guitars) => (
-                  <Col xs={12} key={guitars.id}>
-                  <DisplayEquipment equipment={guitars} />
-                  </Col>
+                <DisplayEquipment equipment={guitars} key={guitars.id} />
               ))
             : null}
         </div>

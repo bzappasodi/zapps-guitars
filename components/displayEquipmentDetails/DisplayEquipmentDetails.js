@@ -4,43 +4,52 @@ import Link from "next/link";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Image from "next/image";
-
+import Head from "next/head";
+import { Container, Row, Col } from "react-bootstrap";
 // display either amps or guitars
 const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
   return (
-    <>
-      <div className={styles.layout}>
-        <div>
-          <Image
-            src={`/inventory/${specsOfEquipmentSelected.image}`}
-            alt={specsOfEquipmentSelected.name}
-            width={272}
-            height={595}
-            className={styles.detailsImage}
-          />
-          <Link className="mt-4" href="/">
-            Inventory list page <>&#8594;</>
-          </Link>
-        </div>
-        <div>
-          <div className={styles.name}>
-            {specsOfEquipmentSelected.year} {specsOfEquipmentSelected.name}
-          </div>
-          <table>
-            <thead></thead>
-            <tbody>
-              {specsOfEquipmentSelected.specs.map((spec) => (
-                <tr key={spec}>
-                  <td>
-                    <li>{spec}</li>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </>
+    <div>
+      <Head>
+        <title>
+          {specsOfEquipmentSelected.year} {specsOfEquipmentSelected.name}
+        </title>
+      </Head>
+      <Container>
+        {specsOfEquipmentSelected && (
+          <>
+            <h1>
+              {" "}
+              {specsOfEquipmentSelected.year} {specsOfEquipmentSelected.name}
+            </h1>
+            <Row>
+              <Col lg={4} md={6} xs={6}>
+                <Image
+                  src={`/inventory/${specsOfEquipmentSelected.image}`}
+                  width={272}
+                  height={595}
+                  alt={specsOfEquipmentSelected.name}
+                  className={styles.detailsImage}
+                />
+                <br />
+                <Link className="mt-4" href="/">
+                  Inventory list page <>&#8594;</>
+                </Link>
+              </Col>
+              <Col lg={8} md={6} xs={6}>
+                {specsOfEquipmentSelected.specs.map((spec) => (
+                  <Row key={spec}>
+                    <Col xs={10}>
+                      <li>{spec}</li>
+                    </Col>
+                  </Row>
+                ))}
+              </Col>
+            </Row>
+          </>
+        )}
+      </Container>
+    </div>
   );
 };
 
