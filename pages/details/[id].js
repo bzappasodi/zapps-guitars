@@ -11,7 +11,6 @@ export default function Details() {
 
   const id = router.query.id;
 
-
   if (!id) return null;
 
   let equipmentSelectedSpecs = getEquipmentSelectedSpecs(

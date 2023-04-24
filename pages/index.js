@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.scss";
 import { useDispatch } from "react-redux";
 import * as guitarInventorySaga from "../store/sagas/guitarInventory/guitarInventorySaga";
 import * as amplifierInventorySaga from "../store/sagas/amplifierInventory/ampliferInventorySaga";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 import GuitarHooks from "../components/hooks/GuitarHooks";
 import DisplayEquipment from "../components/displayEquipment/DisplayEquipment";
@@ -27,35 +27,32 @@ export default function Home() {
       dispatch(guitarInventorySaga.performGuitarInventoryDisplay());
       dispatch(amplifierInventorySaga.performAmplifierInventoryDisplay());
     };
-    if (!guitars){fetchEquipment();}
+    if (!guitars) {
+      fetchEquipment();
+    }
   }, []);
+
+  const renderEquipment = (equipment) => {
+    if (!equipment) return null;
+    return equipment.map((item) => (
+      <Col xs={12} key={item.id}>
+        <DisplayEquipment equipment={item} />
+      </Col>
+    ));
+  };
 
   return (
     <>
       <ToggleEquipment
-        toggleEquipmentSelection={(e) => toggleEquipmentSelection(e)}
+        toggleEquipmentSelection={toggleEquipmentSelection}
         radioButtonSelection={radioButtonSelection}
       />
 
-      {radioButtonSelection === "amps" ? (
-        <div className={styles.grid}>
-          {amps
-            ? amps.map((amps) => (
-                <DisplayEquipment equipment={amps} key={amps.id} />
-              ))
-            : null}
-        </div>
-      ) : (
-        <div className={styles.grid}>
-          {guitars
-            ? guitars.map((guitars) => (
-                  <Col xs={12} key={guitars.id}>
-                  <DisplayEquipment equipment={guitars} />
-                  </Col>
-              ))
-            : null}
-        </div>
-      )}
+      <div className={styles.grid}>
+        {radioButtonSelection === "amps"
+          ? renderEquipment(amps)
+          : renderEquipment(guitars)}
+      </div>
     </>
   );
 }

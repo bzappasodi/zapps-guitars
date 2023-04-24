@@ -18,10 +18,6 @@ const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
       <Container>
         {specsOfEquipmentSelected && (
           <>
-            <h1>
-              {" "}
-              {specsOfEquipmentSelected.year} {specsOfEquipmentSelected.name}
-            </h1>
             <Row>
               <Col lg={4} md={6} xs={6}>
                 <Image
@@ -37,6 +33,10 @@ const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
                 </Link>
               </Col>
               <Col lg={8} md={6} xs={6}>
+                <h3>
+                  {specsOfEquipmentSelected.year}{" "}
+                  {specsOfEquipmentSelected.name}
+                </h3>
                 {specsOfEquipmentSelected.specs.map((spec) => (
                   <Row key={spec}>
                     <Col xs={10}>

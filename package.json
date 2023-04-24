@@ -34,6 +34,7 @@
     "react-placeholder": "^4.1.0",
     "react-query": "^3.39.3",
     "react-redux": "^8.0.4",
+    "reactstrap": "^9.1.9",
     "redux": "^4.2.1",
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.2.1",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 import styles from "../../styles/Home.module.scss";
 import Link from "next/link";
@@ -27,7 +27,6 @@ const DisplayEquipment = ({ equipment }) => {
         </Card.Body>
       </Card>
     </Link>
-
   );
 };
 
