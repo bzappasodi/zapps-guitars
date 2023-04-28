@@ -6,9 +6,12 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Image from "next/image";
 import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
+import GuitarHooks from "../hooks/GuitarHooks";
 // display either amps or guitars
 const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
-  return (
+    const {radioButtonSelection } = GuitarHooks();
+
+    return (
     <div>
       <Head>
         <title>
@@ -23,7 +26,7 @@ const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
                 <Image
                   src={`/inventory/${specsOfEquipmentSelected.image}`}
                   width={272}
-                  height={595}
+                  height={`${radioButtonSelection === 'amps' ? 212 : 595}`}
                   alt={specsOfEquipmentSelected.name}
                   className={styles.detailsImage}
                 />

@@ -10,7 +10,7 @@ describe("it should test the button", () => {
   it("should test the button component exists", () => {
     cy.get(".gtr-title").should(
       "have.text",
-      "© 2023 Zapp's Equipment inventory"
+      "©2023 Zapp's Equipment inventory"
     );
   });
 });

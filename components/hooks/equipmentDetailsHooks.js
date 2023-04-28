@@ -17,8 +17,6 @@ function EquipmentDetailsHooks() {
   const radioButtonSelection = useSelector((state) =>
     getRadioButtonSelection(state)
   );
-  // const equipmentSelected = (state) => state.guitarsReducer.guitars[1];
-  // console.log("equipmentSelected " + equipmentSelected);
 
   const getEquipmentSelectedSpecs = (id, getRadioButtonSelection) => {
     let specsOfEquipmentSelected = guitarsSelected[id - 1];

@@ -18,7 +18,7 @@
   {
     "id": 2,
     "name": "Fender Deluxe Reverb",
-    "image": "fenderdeluxereverb.jpg",
+    "image": "deluxereverb.jpg",
     "year": "1965",
     "specs": [
       "The 1968 Les Paul Standards were gold tops only, and featured soapbar P90 pickups.",
@@ -65,7 +65,7 @@
   {
     "id": 5,
     "name": "Fender Twin",
-    "image": "fender twin.jpg",
+    "image": "fendertwin.jpg",
     "year": "1981",
     "specs": [
       "Sea sick Green",
