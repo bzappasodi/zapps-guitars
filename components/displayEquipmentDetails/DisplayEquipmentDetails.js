@@ -9,9 +9,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import GuitarHooks from "../hooks/GuitarHooks";
 // display either amps or guitars
 const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
-    const {radioButtonSelection } = GuitarHooks();
+  const { radioButtonSelection } = GuitarHooks();
+    const { image, name } = specsOfEquipmentSelected;
+    const height = radioButtonSelection === "amps" ? 212 : 595;
 
-    return (
+  return (
     <div>
       <Head>
         <title>
@@ -24,11 +26,11 @@ const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
             <Row>
               <Col lg={4} md={6} xs={6}>
                 <Image
-                  src={`/inventory/${specsOfEquipmentSelected.image}`}
-                  width={272}
-                  height={`${radioButtonSelection === 'amps' ? 212 : 595}`}
-                  alt={specsOfEquipmentSelected.name}
-                  className={styles.detailsImage}
+                    src={`/inventory/${image}`}
+                    width={272}
+                    height={height}
+                    alt={name}
+                    className={styles.detailsImage}
                 />
                 <br />
                 <Link className="mt-4" href="/">

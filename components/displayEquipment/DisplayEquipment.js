@@ -10,18 +10,18 @@ import GuitarHooks from "../hooks/GuitarHooks";
 
 // display either amps or guitars
 const DisplayEquipment = ({ equipment }) => {
-  const {radioButtonSelection } = GuitarHooks();
+  const { radioButtonSelection } = GuitarHooks();
+  const imageWidth = 272;
+  const imageHeight = radioButtonSelection === "amps" ? 212 : 595;
 
   return (
     <Link href={`/details/${equipment.id}`}>
       <Card key={equipment.id} className={styles.card}>
         <Image
-          src={`/inventory/${equipment.image}`}
-          alt={radioButtonSelection}
-          // width={`${radioButtonSelection} ? 'amps' 272 : 'guitars' 500 `}
-          width={272}
-
-          height={`${radioButtonSelection === 'amps' ? 212 : 595}`}
+            src={`/inventory/${equipment.image}`}
+            alt={radioButtonSelection}
+            width={imageWidth}
+            height={imageHeight}
         />
         <Card.Body>
           <Card.Text>
