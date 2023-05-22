@@ -10,8 +10,8 @@ import GuitarHooks from "../hooks/GuitarHooks";
 // display either amps or guitars
 const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
   const { radioButtonSelection } = GuitarHooks();
-    const { image, name } = specsOfEquipmentSelected;
-    const height = radioButtonSelection === "amps" ? 212 : 595;
+  const { image, name } = specsOfEquipmentSelected;
+  const height = radioButtonSelection === "amps" ? 212 : 595;
 
   return (
     <div>
@@ -26,11 +26,11 @@ const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
             <Row>
               <Col lg={4} md={6} xs={6}>
                 <Image
-                    src={`/inventory/${image}`}
-                    width={272}
-                    height={height}
-                    alt={name}
-                    className={styles.detailsImage}
+                  src={`/inventory/${image}`}
+                  width={272}
+                  height={height}
+                  alt={name}
+                  className={styles.detailsImage}
                 />
                 <br />
                 <Link className="mt-4" href="/">

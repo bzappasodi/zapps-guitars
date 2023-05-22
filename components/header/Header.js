@@ -23,7 +23,7 @@ function Header() {
           placeholder="blur"
           style={{ objectFit: "cover" }}
           sizes={"100vw"}
-          quality={100}
+          quality={75}
         />
       </div>
       {/* eslint-disable-next-line react/no-unescaped-entities */}
