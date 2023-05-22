@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "../styles/Home.module.scss";
 import { useDispatch } from "react-redux";
-import * as guitarInventorySaga from "../store/sagas/guitarInventory/guitarInventorySaga";
 import * as amplifierInventorySaga from "../store/sagas/amplifierInventory/ampliferInventorySaga";
 
 import GuitarHooks from "../components/hooks/GuitarHooks";
