@@ -10,7 +10,6 @@ import DisplayEquipment from "../components/displayEquipment/DisplayEquipment";
 import ToggleEquipment from "../components/toggleEquipment/ToggleEquipment";
 import * as equipmentInventorySaga from "../store/sagas/equipmentInventory/equipmentInventorySaga";
 
-// TODO add search box functionality, make responsive fix layout component, restrict radio buttons
 
 export default function Home() {
   const { guitars, amps, radioButtonSelection } = GuitarHooks();

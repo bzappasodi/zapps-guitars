@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useRouter } from "next/router";
-import EquipmentDetailsHooks from "../../components/hooks/EquipmentDetailsHooks";
+import EquipmentDetailsHooks from "../../components/hooks/equipmentDetailsHooks";
 import DisplayEquipmentDetails from "../../components/displayEquipmentDetails/DisplayEquipmentDetails";
 
 export default function Details() {
