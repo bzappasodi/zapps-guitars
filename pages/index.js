@@ -30,7 +30,7 @@ export default function Home() {
     if (!guitars) {
       fetchEquipment();
     }
-  }, []);
+  }, [dispatch, guitars]);
 
   const renderEquipment = (equipment) => {
     if (!equipment) return null;
