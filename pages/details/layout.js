@@ -13,12 +13,12 @@ const openSans = Open_Sans({
 export default function DetailsLayout({ children }) {
   return (
     <>
-      <Header />
-      <Container className={openSans.className}>
-        <h3 className="gtr-title">Zapp&apos;s Equipment Inventory</h3>
-        <main>{children}</main>
-        <Footer />
-      </Container>
+      {/*<Header />*/}
+      {/*<Container className={openSans.className}>*/}
+      {/*  <h3 className="gtr-title">Zapp&apos;s Equipment Inventory</h3>*/}
+      {/*  <main>{children}</main>*/}
+      {/*  <Footer />*/}
+      {/*</Container>*/}
     </>
   );
 }

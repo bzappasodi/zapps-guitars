@@ -5,53 +5,46 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Image from "next/image";
 import Head from "next/head";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import GuitarHooks from "../hooks/GuitarHooks";
 // display either amps or guitars
 const DisplayEquipmentDetails = ({ specsOfEquipmentSelected }) => {
   const { radioButtonSelection } = GuitarHooks();
-  const { image, name } = specsOfEquipmentSelected;
+  const { image, name, year, specs } = specsOfEquipmentSelected;
   const height = radioButtonSelection === "amps" ? 212 : 595;
 
   return (
     <div>
       <Head>
         <title>
-          {specsOfEquipmentSelected.year} {specsOfEquipmentSelected.name}
+          {year} {name}
         </title>
       </Head>
       <Container>
         {specsOfEquipmentSelected && (
-          <>
-            <Row>
-              <Col lg={4} md={6} xs={6}>
-                <Image
-                  src={`/inventory/${image}`}
-                  width={272}
-                  height={height}
-                  alt={name}
-                  className={styles.detailsImage}
-                />
-                <br />
-                <Link className="mt-4" href="/">
-                  Inventory list page <>&#8594;</>
-                </Link>
-              </Col>
-              <Col lg={8} md={6} xs={6}>
-                <h3>
-                  {specsOfEquipmentSelected.year}{" "}
-                  {specsOfEquipmentSelected.name}
-                </h3>
-                {specsOfEquipmentSelected.specs.map((spec) => (
-                  <Row key={spec}>
-                    <Col xs={10}>
-                      <li>{spec}</li>
-                    </Col>
-                  </Row>
+          <Row>
+            <Col xs={12} lg={4}>
+              <Image
+                src={`/inventory/${image}`}
+                width={272}
+                height={height}
+                alt={name}
+                className={styles.detailsImage}
+              />
+              <br />
+              <Link href="/">Inventory list page &#8594;</Link>
+            </Col>
+            <Col xs={12} lg={8}>
+              <h3>
+                {year} {name}
+              </h3>
+              <ul>
+                {specs.map((spec) => (
+                  <li key={spec}>{spec}</li>
                 ))}
-              </Col>
-            </Row>
-          </>
+              </ul>
+            </Col>
+          </Row>
         )}
       </Container>
     </div>
