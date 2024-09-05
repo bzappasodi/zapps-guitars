@@ -1,5 +1,4 @@
-import { call, all, select, takeEvery } from "redux-saga/effects";
-import React from "react";
+import { all, select, takeEvery } from "redux-saga/effects";
 import * as constants from "../../../constants";
 
 export function performEquipmentDisplay(id) {

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import styles from "../styles/Home.module.scss";
 import { useDispatch } from "react-redux";
 import * as guitarInventorySaga from "../store/sagas/guitarInventory/guitarInventorySaga";
 import * as amplifierInventorySaga from "../store/sagas/amplifierInventory/ampliferInventorySaga";
@@ -9,14 +8,6 @@ import GuitarHooks from "../components/hooks/GuitarHooks";
 import DisplayEquipment from "../components/displayEquipment/DisplayEquipment";
 import ToggleEquipment from "../components/toggleEquipment/ToggleEquipment";
 import * as equipmentInventorySaga from "../store/sagas/equipmentInventory/equipmentInventorySaga";
-// const renderEquipment = () => {
-//   const equipment = radioButtonSelection === "amps"? amps : guitars;
-//   return equipment.map((item) => (
-//       <div key={item.id}  >
-//         <DisplayEquipment equipment={item} />
-//       </div>
-//   ));
-// };
 
 export default function Home() {
   const { guitars, amps, radioButtonSelection } = GuitarHooks();
@@ -57,9 +48,7 @@ export default function Home() {
         radioButtonSelection={radioButtonSelection}
       />
 
-      {radioButtonSelection === "amps"
-        ? renderEquipment(amps)
-        : renderEquipment(guitars)}
+      {renderEquipment(radioButtonSelection === "amps" ? amps : guitars)}
     </>
   );
 }

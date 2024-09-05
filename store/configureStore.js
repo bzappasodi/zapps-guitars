@@ -8,7 +8,6 @@ import ampsReducer from "./reducers/ampsReducer";
 import toggleEquipmentReducer from "./reducers/toggleEquipmentReducer";
 import equipmentDetailsReducer from "./reducers/equipmentDetailsReducer";
 import rootSaga from "./sagas/rootSaga";
-import thunk from "redux-thunk";
 
 const rootReducer = combineReducers({
   guitarsReducer,
@@ -22,7 +21,7 @@ const logger = createLogger();
 export const makeStore = () => {
   // 1: Create the middleware
   const sagaMiddleware = createSagaMiddleware();
-  const middleware = [sagaMiddleware, thunk];
+  const middleware = [sagaMiddleware];
 
   middleware.push(logger);
   // 2: Add an extra parameter for applying middleware

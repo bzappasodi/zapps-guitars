@@ -26,7 +26,6 @@ function Header() {
           quality={75}
         />
       </div>
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
     </>
   );
 }

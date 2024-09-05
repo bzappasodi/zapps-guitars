@@ -34,3 +34,18 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 # zapp's-guitars
+
+commit pushes to github,
+https://github.com/bzappasodi/zapps-guitars
+then publishes to Vercel
+
+https://vercel.com/dashboard
+
+https://vercel.com/billyzapp-gmailcom/zapps-guitars
+
+TO DO
+fix broken link on back
+make responsive
+clean up main logo
+
+Learn Python, ras pi

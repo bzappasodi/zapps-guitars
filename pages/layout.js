@@ -3,7 +3,7 @@ import Header from "../components/header/Header";
 import { Container, Row, Col } from "react-bootstrap";
 
 import React from "react";
-import { Open_Sans } from "@next/font/google";
+import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
