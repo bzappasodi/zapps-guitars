@@ -20,24 +20,21 @@ describe("Navigation", () => {
       ":nth-child(1) > :nth-child(1) > a > .Home_card__fubC7 > img"
     ).click();
 
-    cy.get(".container h3").should(
-      "have.text",
-      "1973 Gibson Les Paul Custom"
-    );
+    cy.get(".container h3").should("have.text", "1973 Gibson Les Paul Custom");
 
-    cy.url('match', 'http://localhost:3000/details/1').then(el=>{
-      cy.log(el)
-    })
-
+    cy.url("match", "http://localhost:3000/details/1").then((el) => {
+      cy.log(el);
+    });
   });
 
-  it("should click the back to home page link", () =>{
+  it("should click the back to home page link", () => {
     cy.get(
-        ":nth-child(1) > :nth-child(1) > a > .Home_card__fubC7 > img"
+      ":nth-child(1) > :nth-child(1) > a > .Home_card__fubC7 > img"
     ).click();
-    cy.get(".container a").should(
-        "have.text",
-        "Inventory list page →"
-    );
-  } )
+    cy.get(".container a").should("have.text", "Inventory list page →");
+    cy.get(".container a").click();
+    cy.url("match", "http://localhost:3000").then((el) => {
+      cy.log(el);
+    });
+  });
 });

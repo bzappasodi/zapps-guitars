@@ -4,7 +4,6 @@ import GuitarHooks from "../../components/hooks/GuitarHooks";
 import { Provider } from "react-redux";
 import configureStore from "redux-mock-store";
 
-
 describe("DisplayEquipment Component", () => {
   const mockStore = configureStore();
   let store;

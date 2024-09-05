@@ -24,6 +24,7 @@ const DisplayEquipment = ({ equipment }) => {
           width={imageWidth}
           height={imageHeight}
           quality={75}
+          className={styles.contentImg}
         />
         <Card.Body>
           <Card.Text>

@@ -6,6 +6,12 @@
 
 .card {
   width: 272px;
+  margin-bottom: 20px;
+}
+
+.contentImg  {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .card:hover {
@@ -19,7 +25,7 @@
 }
 
 
-.displayImage{
+.displayImage {
   white-space: nowrap;
   font-size: 0.9em;
   color: #4f4f4f;
