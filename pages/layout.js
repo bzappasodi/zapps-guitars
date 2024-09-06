@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <Container fluid>
       <Row>
-        <Col xs={12} md={8} lg={12} className={openSans.className}>
+        <Col xs={12} className={openSans.className}>
           <Header />
           <h3 className="gtr-title">Zapp&apos;s Equipment Inventory</h3>
           <main>{children}</main>

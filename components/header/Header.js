@@ -8,22 +8,18 @@ function Header() {
       <Head>
         <title>Zapp&apos;s Equipment Inventory</title>
       </Head>
-      <div
-        style={{
-          overflow: "hidden",
-          height: "100vh",
-          width: "100vw",
-          zIndex: "-1",
-        }}
-      >
+      <div>
         <Image
           src={myEquipment}
           alt="my equip"
-          fill
           placeholder="blur"
           style={{ objectFit: "cover" }}
           sizes={"100vw"}
           quality={75}
+          width={329}
+          height={205}
+          layout="responsive"
+          className="rounded-md"
         />
       </div>
     </>
