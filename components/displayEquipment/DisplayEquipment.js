@@ -8,23 +8,25 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Image from "next/image";
 import GuitarHooks from "../hooks/GuitarHooks";
 
-// TODO learn next font
-// display either amps or guitars
+
 const DisplayEquipment = ({ equipment }) => {
   const { radioButtonSelection } = GuitarHooks();
-  const imageWidth = 272;
-  const imageHeight = radioButtonSelection === "amps" ? 212 : 595;
-
   return (
     <Link href={`/details/${equipment.id}`}>
       <Card key={equipment.id} className={styles.card}>
         <Image
           src={`/inventory/${equipment.image}`}
           alt={radioButtonSelection}
-          width={imageWidth}
-          height={imageHeight}
+          width={0}
+          height={0}
+          sizes="100vw"
           quality={75}
-          className={styles.contentImg}
+          layout="responsive"
+          className={
+            radioButtonSelection === "amps"
+              ? styles.contentImgAmp
+              : styles.contentImgGtr
+          }
         />
         <Card.Body>
           <Card.Text>

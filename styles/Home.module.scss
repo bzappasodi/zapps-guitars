@@ -9,9 +9,18 @@
   margin-bottom: 20px;
 }
 
-.contentImg  {
+.contentImgGtr  {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 272px;
+  height: 595px !important;
+}
+
+.contentImgAmp  {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 272px;
+  height: 212px !important;
 }
 
 .card:hover {
