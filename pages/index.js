@@ -41,14 +41,16 @@ export default function Home() {
     </Row>
   );
 
-  return (
-    <>
-      <ToggleEquipment
-        toggleEquipmentSelection={toggleEquipmentSelection}
-        radioButtonSelection={radioButtonSelection}
-      />
+  const selectedEquipment = radioButtonSelection === "amps" ? amps : guitars;
 
-      {renderEquipment(radioButtonSelection === "amps" ? amps : guitars)}
-    </>
+  return (
+      <>
+        <ToggleEquipment
+            toggleEquipmentSelection={toggleEquipmentSelection}
+            radioButtonSelection={radioButtonSelection}
+        />
+        {renderEquipment(selectedEquipment)}
+      </>
   );
+
 }

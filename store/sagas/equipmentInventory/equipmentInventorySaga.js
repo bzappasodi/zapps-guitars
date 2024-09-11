@@ -1,7 +1,5 @@
 import { call, all, put, takeEvery } from "redux-saga/effects";
-import React from "react";
 import * as constants from "../../../constants";
-import * as api from "../../../api/equipmentInventoryService";
 import * as actionTypes from "../../actions/actionTypes";
 
 export function* watchEquipmentInventoryDisplay() {

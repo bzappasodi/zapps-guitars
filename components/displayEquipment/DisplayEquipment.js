@@ -8,7 +8,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Image from "next/image";
 import GuitarHooks from "../hooks/GuitarHooks";
 
-
 const DisplayEquipment = ({ equipment }) => {
   const { radioButtonSelection } = GuitarHooks();
   return (
