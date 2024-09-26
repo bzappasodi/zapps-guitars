@@ -14,7 +14,7 @@ function ToggleEquipment({ radioButtonSelection, toggleEquipmentSelection }) {
             label="Amps"
             name="equipment-view"
             value="amps"
-            aria-label="Amps"
+            ariaLabel="Amps"
             checked={radioButtonSelection === "amps"}
             onChange={(e) => toggleEquipmentSelection(e)}
           />
@@ -22,7 +22,7 @@ function ToggleEquipment({ radioButtonSelection, toggleEquipmentSelection }) {
         <Col className="pt-1">
           <RadioButton
             label="Guitars"
-            aria-label="Guitars"
+            ariaLabel="Guitars"
             value="guitars"
             checked={radioButtonSelection === "guitars"}
             name="equipment-view"
