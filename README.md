@@ -40,8 +40,11 @@ https://github.com/bzappasodi/zapps-guitars
 then publishes to Vercel
 
 https://vercel.com/dashboard
+https://vercel.com/billyzappgmailcoms-projects
+https://vercel.com/billyzapp/zapps-guitars
 
-https://vercel.com/billyzapp-gmailcom/zapps-guitars
+prod
+https://zapps-guitars-oc8g.vercel.app/
 
 TO DO
 fix broken link on back

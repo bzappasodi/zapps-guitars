@@ -3,27 +3,26 @@ import Form from "react-bootstrap/Form";
 import styles from "../../styles/Home.module.scss";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import RadioButton from "../RadioButton/RadioButton";
 
 function ToggleEquipment({ radioButtonSelection, toggleEquipmentSelection }) {
   return (
     <Form className={styles.toggleEquipment}>
       <Row>
         <Col className="pt-1">
-          <Form.Check
-            inline
+          <RadioButton
             label="Amps"
             name="equipment-view"
             value="amps"
+            aria-label="Amps"
             checked={radioButtonSelection === "amps"}
             onChange={(e) => toggleEquipmentSelection(e)}
-            type={"radio"}
           />
         </Col>
         <Col className="pt-1">
-          <Form.Check
-            inline
+          <RadioButton
             label="Guitars"
-            type={"radio"}
+            aria-label="Guitars"
             value="guitars"
             checked={radioButtonSelection === "guitars"}
             name="equipment-view"

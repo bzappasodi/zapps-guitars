@@ -3,11 +3,11 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Footer from "../footer/Footer";
 
-describe("Home", () => {
-  it("renders a heading", () => {
+describe("Footer", () => {
+  it("it should check the copy-rite text in the footer", () => {
     render(<Footer />);
     const heading = screen.getByRole("heading", {
-      name: "© 2023 Zapp's Equipment inventory",
+      name: "© 2024 Zapp's Equipment inventory",
     });
     expect(heading).toBeInTheDocument();
   });
