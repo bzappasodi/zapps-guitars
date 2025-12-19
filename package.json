@@ -79,5 +79,8 @@
       "cypress",
       "prettier"
     ]
+  },
+  "engines": {
+    "node": "24.x"
   }
 }
