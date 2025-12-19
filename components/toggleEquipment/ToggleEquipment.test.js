@@ -11,8 +11,8 @@ describe("ToggleEquipment", () => {
     };
     render(<ToggleEquipment {...props} />);
 
-    const whatever = screen.getByDisplayValue("guitars", { selector: "input" });
+    const displayValue = screen.getByDisplayValue("guitars", { selector: "input" });
 
-    expect(whatever).toBeInTheDocument();
+    expect(displayValue).toBeInTheDocument();
   });
 });
