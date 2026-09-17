@@ -20,7 +20,7 @@ const DisplayEquipment = ({ equipment }) => {
           height={0}
           sizes="100vw"
           quality={75}
-          layout="responsive"
+          style={{ width: '100%', height: 'auto' }}
           className={
             radioButtonSelection === "amps"
               ? styles.contentImgAmp

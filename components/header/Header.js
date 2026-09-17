@@ -13,6 +13,7 @@ function Header() {
                 src={myEquipment}
                 width={800}
                 height={600}
+                loading="eager"
                 sizes="100vw"
                 style={{ width: '100%', height: 'auto' }}
                 alt="Equipment"
