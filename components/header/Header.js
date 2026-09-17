@@ -11,15 +11,11 @@ function Header() {
         <div role="heading" aria-level="3">
             <Image
                 src={myEquipment}
-                alt="my equip"
-                placeholder="blur"
-                style={{objectFit: "cover"}}
-                sizes={"100vw"}
-                quality={75}
-                width={329}
-                height={205}
-                layout="responsive"
-                className="rounded-md"
+                width={800}
+                height={600}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }}
+                alt="Equipment"
             />
         </div>
     </>
