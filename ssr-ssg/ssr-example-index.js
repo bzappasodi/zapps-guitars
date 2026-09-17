@@ -13,7 +13,7 @@ import { Col } from "react-bootstrap";
 export async function getServerSideProps() {
   // comes in as serverside props
   const resp = await fetch(
-    "https://zappsguitars.s3.amazonaws.com/guitars.json"
+    "/json/guitars.json"
   );
   return {
     props: {

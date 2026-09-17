@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Container, Row, Col } from "react-bootstrap";
-import guitars from "../../json/guitars.json";
+import guitars from "json/guitars.json";
 import Image from "next/image";
 import styles from "../../styles/Details.module.scss";
 import React from "react";

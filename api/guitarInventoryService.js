@@ -1,7 +1,7 @@
 export async function getGuitars() {
   try {
     const resp = await fetch(
-      "https://zappsguitars.s3.amazonaws.com/guitars.json"
+      "json/guitars.json"
     );
     if (resp.ok) {
       return await resp.json();
@@ -10,3 +10,6 @@ export async function getGuitars() {
     console.log("Error " + e);
   }
 }
+
+
+
